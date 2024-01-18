@@ -1,0 +1,13 @@
+.Wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+}
+
+.Name {
+  background-color: black;
+}
+
+.Content {
+  background-color: black;
+}
