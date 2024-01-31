@@ -6,10 +6,10 @@ export default function Rocket() {
     <div className={styles.Wrapper}>
       <Image
         className={styles.RocketImage}
-        src="/img/rocket.svg"
+        src="/img/astro-rocket.svg"
         alt="rocket"
-        width="130"
-        height="130"
+        width="150"
+        height="150"
       />
       <Image
         className={styles.SmokeImage}

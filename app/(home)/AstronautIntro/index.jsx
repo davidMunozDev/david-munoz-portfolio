@@ -12,8 +12,8 @@ export default function AstronautIntro() {
           className={styles.AstronautImage}
           src="/img/astronaut.svg"
           alt="astronaut"
-          width="350"
-          height="350"
+          width="250"
+          height="250"
         />
 
         <div className={styles.StarsWrapper}>

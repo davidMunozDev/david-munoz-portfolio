@@ -1,10 +1,11 @@
 import AstronautIntro from "./AstronautIntro";
 import Profile from "./Profile";
+import Notifications from "./Notifications";
 import styles from "./home.module.scss";
 
 export default function Home() {
   return (
-    <main className={styles.Container}>
+    <div className={styles.Container}>
       <div className={styles.LeftColumn}>
         <Profile />
       </div>
@@ -17,6 +18,7 @@ export default function Home() {
             borderRadius: "10px",
           }}
         ></div>
+        <Notifications />
         <div
           style={{
             backgroundColor: "#D9D9D9",
@@ -53,6 +55,6 @@ export default function Home() {
           }}
         ></div>
       </div>
-    </main>
+    </div>
   );
 }
