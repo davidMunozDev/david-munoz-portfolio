@@ -1,29 +1,28 @@
 .Container {
-  padding: 40px;
-  background-color: #191919; //TODO move to var
+  padding: 22px;
   height: 100vh;
   width: 100vw;
   display: flex;
-  gap: 32px;
+  gap: 22px;
 }
 
 @mixin column($grow, $rows) {
   width: 100%;
   height: 100%;
   display: grid;
-  gap: 32px;
+  gap: 22px;
   flex: $grow 0 0px;
   grid-template-rows: $rows;
 }
 
 .LeftColumn {
-  @include column(4, 1.5fr 1fr 1fr 1fr 1fr);
+  @include column(4, auto 110px 100px 1fr);
 }
 
 .CenterColumn {
-  @include column(5, 94px 1fr 200px);
+  @include column(5, 90px 24px 1fr 150px);
 }
 
 .RightColumn {
-  @include column(4, 3fr 120px 2fr);
+  @include column(4, 2fr 90px 1fr);
 }

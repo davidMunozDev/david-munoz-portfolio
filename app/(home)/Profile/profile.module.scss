@@ -1,13 +1,43 @@
+$border-radius: 10px; //TODO move to global variable
+$color-primary: #ffffff;
+
 .Wrapper {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
   gap: 24px;
+  background: linear-gradient(90deg, #282f4e 0%, #313960 100%);
+  border-radius: $border-radius;
+  padding: 16px;
+  color: $color-primary;
+}
+
+.ProfileInformation {
+  display: flex;
+  gap: 22px;
+}
+
+.Avatar {
+  border-radius: $border-radius;
+  display: block;
+}
+
+.Information {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
 }
 
 .Name {
-  background-color: black;
+  font-size: 20px; //TODO text component
+  font-weight: 600;
 }
 
-.Content {
-  background-color: black;
+.Description {
+  font-size: 12px; //TODO text component
+  font-weight: 400;
+}
+
+.Social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
