@@ -16,7 +16,7 @@
 }
 
 .LeftColumn {
-  @include column(4, auto 110px 100px 1fr);
+  @include column(4, auto 260px 1fr);
 }
 
 .CenterColumn {
@@ -24,5 +24,5 @@
 }
 
 .RightColumn {
-  @include column(4, 2fr 90px 1fr);
+  @include column(4, 3fr 90px 2fr);
 }

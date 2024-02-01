@@ -1,13 +1,16 @@
+import styles from "./home.module.scss";
 import AstronautIntro from "./AstronautIntro";
 import Profile from "./Profile";
 import Notifications from "./Notifications";
-import styles from "./home.module.scss";
+import Navigation from "./Navigation";
+import Chat from "./Chat";
 
 export default function Home() {
   return (
     <div className={styles.Container}>
       <div className={styles.LeftColumn}>
         <Profile />
+        <Navigation />
       </div>
       <div className={styles.CenterColumn}>
         <div
@@ -19,14 +22,7 @@ export default function Home() {
           }}
         ></div>
         <Notifications />
-        <div
-          style={{
-            backgroundColor: "#D9D9D9",
-            width: "100%",
-            height: "100%",
-            borderRadius: "10px",
-          }}
-        ></div>
+        <Chat />
         <div
           style={{
             backgroundColor: "#000000",

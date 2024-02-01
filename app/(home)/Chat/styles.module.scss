@@ -1,0 +1,46 @@
+.Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  background: linear-gradient(0deg, #031556, #266ba1, #44b4e0);
+  background-size: 150% 150%;
+  animation: backgroundGradient 10s ease infinite;
+  border-radius: 10px;
+}
+
+.MessagesWrapper {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Message {
+  width: fit-content;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.28);
+  color: #080d20;
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.Message:last-of-type {
+  border-radius: 24px 24px 24px 0px;
+}
+
+@keyframes backgroundGradient {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 0 100%;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}

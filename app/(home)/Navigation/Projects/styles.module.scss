@@ -1,0 +1,54 @@
+$main-gap: 18px;
+
+.Wrapper {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  background: #313960;
+  border-radius: 10px; //TODO add vars
+
+  h2 {
+    color: white; //TODO use var
+    font-weight: 700;
+    font-size: 16px;
+    z-index: 4;
+  }
+}
+
+@mixin paper($bg, $h, $w, $z) {
+  background: $bg;
+  z-index: $z;
+  width: $w;
+  height: $h;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 10px;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.PaperDark {
+  @include paper(#242944, calc(100% - 16px), 45%, 1);
+}
+
+.PaperMedium {
+  @include paper(#404a7e, calc(100% - 32px), calc(45% - 16px), 2);
+}
+
+.PaperLight {
+  @include paper(#5c69ac, calc(100% - 48px), calc(45% - 32px), 3);
+}
+
+.Astronaut {
+  position: absolute;
+  right: 8px;
+}
+
+.Link {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
