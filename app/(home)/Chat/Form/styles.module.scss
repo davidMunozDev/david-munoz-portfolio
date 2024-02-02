@@ -1,0 +1,51 @@
+.Form {
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background: #313960;
+  border-radius: 10px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 90px;
+  grid-template-areas:
+    "name name email email ."
+    "msg msg msg msg send";
+  grid-template-rows: 30px auto;
+  gap: 8px;
+}
+
+.FormItem {
+  border-radius: 8px;
+  border: none;
+  background: #080d20;
+  color: white;
+  padding: 8px;
+
+  &__message {
+    @extend .FormItem;
+    height: 100%;
+    grid-area: msg;
+  }
+
+  &__name {
+    @extend .FormItem;
+    grid-area: name;
+  }
+
+  &__email {
+    @extend .FormItem;
+    grid-area: email;
+  }
+
+  &__submit {
+    grid-area: send;
+    height: 50px;
+    align-self: end;
+  }
+}
+
+.AstroAdopt {
+  position: absolute;
+  top: -70px;
+  right: 8px;
+}

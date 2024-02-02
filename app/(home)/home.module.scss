@@ -20,7 +20,7 @@
 }
 
 .CenterColumn {
-  @include column(5, 90px 24px 1fr 150px);
+  @include column(5, 90px 24px minmax(500px, 1fr));
 }
 
 .RightColumn {
