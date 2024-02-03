@@ -30,7 +30,9 @@ export function ThemeContextProvider({ children }) {
         changeTheme,
       }}
     >
-      {children}
+      <div className={theme === "dark" ? "theme--dark" : "theme--light"}>
+        {children}
+      </div>
     </ThemeContext.Provider>
   );
 }

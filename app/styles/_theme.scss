@@ -10,9 +10,9 @@ $themes: (
     buttonColorPrimary: #ffffff,
   ),
   "light": (
-    colorPrimary: #ffffff,
-    colorSecondary: #080d20,
-    bgPrimary: #080d20,
+    colorPrimary: #080d20,
+    colorSecondary: #ffffff,
+    bgPrimary: #ffffff,
     bgSecondary: #313960,
     radiusL: 10px,
     /*button styles*/ buttonBgPrimary:
@@ -49,25 +49,6 @@ $green: #859900;
   }
 }
 
-@mixin gthemed() {
-  @each $theme, $map in $themes {
-    .theme--#{$theme} & {
-      $theme-map: () !global;
-      @each $key, $submap in $map {
-        $value: map-get(map-get($themes, $theme), "#{$key}");
-        $theme-map: map-merge(
-          $theme-map,
-          (
-            $key: $value,
-          )
-        ) !global;
-      }
-      @content;
-      $theme-map: null !global;
-    }
-  }
-}
-
-@function t($key: "base0") {
+@function t($key: "colorPrimary") {
   @return map-get($theme-map, $key);
 }
