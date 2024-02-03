@@ -1,3 +1,5 @@
+@import "theme";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,4 +22,12 @@ a {
 
 p {
   margin: 0;
+}
+
+.theme--dark {
+  color: map-get(map-get($themes, "dark"), "colorPrimary");
+}
+
+.theme--light {
+  color: map-get(map-get($themes, "light"), "colorPrimary");
 }

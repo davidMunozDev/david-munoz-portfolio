@@ -8,9 +8,10 @@ export default function Folder({ children, style = "primary" }) {
         className={styles.LinkIcon}
         width="14"
         height="14"
-        name={style === "primary" ? "linkLight" : "linkDark"}
+        name="linkLight"
       />
       <h2>{children}</h2>
+      <div className={styles.Paper} />
     </div>
   );
 }

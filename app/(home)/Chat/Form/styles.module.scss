@@ -21,6 +21,13 @@
   color: white;
   padding: 8px;
 
+  &:hover {
+    &::placeholder {
+      color: white;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
   &__message {
     @extend .FormItem;
     height: 100%;
@@ -46,6 +53,6 @@
 
 .AstroAdopt {
   position: absolute;
-  top: -70px;
+  top: -75px;
   right: 8px;
 }

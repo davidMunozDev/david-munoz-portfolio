@@ -7,16 +7,26 @@ $main-gap: 18px;
   width: 100%;
   height: calc(100% - 12px);
   padding: 8px;
+  z-index: 2;
   border-radius: 10px 0px 10px 10px;
   margin-top: 12px;
+  cursor: pointer;
   &:before {
     content: "";
     position: absolute;
     top: -12px;
     right: 0;
     width: 60px;
-    height: 12px;
+    height: 13px;
     border-radius: 10px 10px 0px 0px;
+    z-index: 2;
+  }
+  &:hover {
+    .Paper {
+      height: 12px;
+      top: -12px;
+      transition: all 0.2s ease-in-out;
+    }
   }
 
   h2 {
@@ -35,11 +45,11 @@ $main-gap: 18px;
 }
 
 .secondary {
-  background: white;
-  color: #080d20; //TODO use var
+  background: #9726ed;
+  color: white; //TODO use var
 
   &:before {
-    background: white;
+    background: #9726ed;
   }
 }
 
@@ -47,4 +57,15 @@ $main-gap: 18px;
   position: absolute;
   top: 0;
   right: 10px;
+}
+
+.Paper {
+  height: 0;
+  width: calc(100% - 16px);
+  background-color: white;
+  left: 8px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  border-radius: 4px 4px 0px 0px;
 }

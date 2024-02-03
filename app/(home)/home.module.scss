@@ -24,5 +24,5 @@
 }
 
 .RightColumn {
-  @include column(4, 3fr 90px 2fr);
+  @include column(4, minmax(308px, 3fr) 90px 2fr);
 }
