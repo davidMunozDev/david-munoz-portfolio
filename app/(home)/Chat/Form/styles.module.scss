@@ -18,13 +18,15 @@
   border-radius: 8px;
   border: none;
   background: #080d20;
-  color: white;
   padding: 8px;
+
+  &::placeholder {
+    transition: all 0.3s ease-in-out;
+  }
 
   &:hover {
     &::placeholder {
       color: white;
-      transition: all 0.3s ease-in-out;
     }
   }
 
