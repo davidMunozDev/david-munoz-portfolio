@@ -6,6 +6,7 @@ import Navigation from "./Navigation";
 import Chat from "./Chat";
 import ThemeSelection from "./ThemeSelection";
 import Position from "./Position";
+import Map from "./Map";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className={styles.LeftColumn}>
         <Profile />
         <Navigation />
+        <Map />
       </div>
       <div className={styles.CenterColumn}>
         <Position />
