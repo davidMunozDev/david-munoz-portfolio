@@ -23,8 +23,8 @@ export default function Profile() {
         </div>
       </div>
       <div className={styles.Social}>
-        <Icon name="linkedIn" />
-        <Icon name="gitHub" />
+        <Icon width="32" height="32" name="linkedIn" />
+        <Icon width="32" height="32" name="gitHub" />
         <Button>Download CV</Button>
       </div>
     </div>

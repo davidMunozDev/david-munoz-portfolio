@@ -1,25 +1,22 @@
-import Image from "next/image";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
+import { SiLinkedin } from "react-icons/si";
+import { FaSquareGithub, FaRegCalendarCheck } from "react-icons/fa6";
 
-const getIcon = (name) => {
+const IconComponent = ({ name, width, height, ...rest }) => {
+  const props = { style: { width, height }, ...rest };
   const icons = {
-    gitHub: "github-dark",
-    linkedIn: "linkedIn",
-    calendar: "calendar",
-    linkLight: "Link",
-    linkDark: "Link-dark",
+    gitHub: <FaSquareGithub {...props} />,
+    linkedIn: <SiLinkedin {...props} />,
+    calendar: <FaRegCalendarCheck {...props} />,
+    link: <MdOutlineArrowOutward {...props} />,
+    moon: <BsFillMoonFill {...props} />,
+    sun: <BsFillSunFill {...props} />,
   };
 
-  return `/icons/${icons[name]}.svg`;
+  return icons[name];
 };
 
 export default function Icon({ name, width = "28", height = "28", ...props }) {
-  return (
-    <Image
-      alt={`icon ${name}`}
-      width={width}
-      height={height}
-      src={getIcon(name)}
-      {...props}
-    />
-  );
+  return <IconComponent name={name} width={width} height={height} {...props} />;
 }
