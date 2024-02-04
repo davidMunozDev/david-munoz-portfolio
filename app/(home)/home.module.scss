@@ -7,11 +7,11 @@
   display: flex;
   gap: 22px;
   @include themed {
-    background: t("bgPrimary");
+    background: t("bgMain");
   }
 }
 
-@mixin column($grow, $rows) {
+@mixin columnRow($grow, $rows) {
   width: 100%;
   height: 100%;
   display: grid;
@@ -21,13 +21,13 @@
 }
 
 .LeftColumn {
-  @include column(4, auto 260px 1fr);
+  @include columnRow(4, auto 260px 1fr);
 }
 
 .CenterColumn {
-  @include column(5, 90px 24px minmax(500px, 1fr));
+  @include columnRow(5, 95px 24px minmax(500px, 1fr));
 }
 
 .RightColumn {
-  @include column(4, minmax(308px, 3fr) 90px 2fr);
+  @include columnRow(4, minmax(308px, 3fr) 90px 2fr);
 }

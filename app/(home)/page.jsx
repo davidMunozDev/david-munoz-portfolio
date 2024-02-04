@@ -5,6 +5,7 @@ import Notifications from "./Notifications";
 import Navigation from "./Navigation";
 import Chat from "./Chat";
 import ThemeSelection from "./ThemeSelection";
+import Position from "./Position";
 
 export default function Home() {
   return (
@@ -14,14 +15,7 @@ export default function Home() {
         <Navigation />
       </div>
       <div className={styles.CenterColumn}>
-        <div
-          style={{
-            backgroundColor: "white",
-            width: "100%",
-            minHeight: "94px",
-            borderRadius: "10px",
-          }}
-        ></div>
+        <Position />
         <Notifications />
         <Chat />
       </div>

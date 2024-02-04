@@ -1,0 +1,43 @@
+.Wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  background-color: #313960;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  font-size: 24px;
+  font-weight: bold;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    z-index: 0;
+    clip-path: polygon(43% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.Company {
+  position: relative;
+  color: #313960;
+  z-index: 5;
+  &::after {
+    content: "at BBVA Technology";
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-decoration: underline;
+  }
+}
