@@ -2,8 +2,8 @@ $themes: (
   "dark": (
     colorPrimary: #ffffff,
     colorSecondary: #080d20,
-    bgPrimary: #080d20,
-    bgSecondary: #313960,
+    bgMain: #080d20,
+    bgPrimary: #313960,
     radiusL: 10px,
     /*button styles*/ buttonBgPrimary:
       linear-gradient(to right, #ab57ec 0%, #9726ed 50%, #2aabe4 100%),
@@ -12,8 +12,8 @@ $themes: (
   "light": (
     colorPrimary: #080d20,
     colorSecondary: #ffffff,
-    bgPrimary: #ffffff,
-    bgSecondary: #313960,
+    bgMain: linear-gradient(180deg, #f0e6f4 0%, #b3d8e1 100%),
+    bgPrimary: #42b2e1,
     radiusL: 10px,
     /*button styles*/ buttonBgPrimary:
       linear-gradient(to right, #ab57ec 0%, #9726ed 50%, #2aabe4 100%),

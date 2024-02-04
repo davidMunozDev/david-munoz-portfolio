@@ -16,7 +16,7 @@ export default function Projects() {
         height="87"
         className={styles.Astronaut}
       />
-      <Icon className={styles.Link} name="linkLight" width="14" height="14" />
+      <Icon className={styles.Link} name="link" width="28" height="28" />
     </div>
   );
 }

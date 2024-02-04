@@ -1,3 +1,5 @@
+@import "../../styles/theme";
+
 .Wrapper {
   border-radius: 10px;
   width: 100%;
@@ -5,7 +7,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #313960;
+  @include themed {
+    background: t("bgPrimary");
+  }
 }
 
 .Content {

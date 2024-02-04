@@ -1,13 +1,17 @@
+@import "../../styles/theme";
+
 $border-radius: 10px; //TODO move to global variable
 $color-primary: #ffffff;
 
 .Wrapper {
   display: grid;
   gap: 24px;
-  background: linear-gradient(90deg, #282f4e 0%, #313960 100%);
   border-radius: $border-radius;
   padding: 16px;
   color: $color-primary;
+  @include themed {
+    background: t("bgPrimary");
+  }
 }
 
 .ProfileInformation {

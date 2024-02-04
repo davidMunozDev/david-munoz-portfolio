@@ -1,8 +1,9 @@
+@import "../../../styles/theme";
+
 .Form {
   height: 150px;
   width: 100%;
   position: relative;
-  background: #313960;
   border-radius: 10px;
   padding: 8px;
   display: grid;
@@ -12,6 +13,9 @@
     "msg msg msg msg send";
   grid-template-rows: 30px auto;
   gap: 8px;
+  @include themed {
+    background: t("bgPrimary");
+  }
 }
 
 .FormItem {
