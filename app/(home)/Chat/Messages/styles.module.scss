@@ -1,16 +1,23 @@
+@import "../../../styles/theme";
+
 .Wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100%;
+  min-height: 300px;
   width: 100%;
   padding: 16px;
   padding-top: 40px;
   background: linear-gradient(0deg, #031556, #266ba1, #44b4e0);
   background-size: 150% 150%;
   animation: backgroundGradient 6s ease infinite;
-  border-radius: 10px;
+  border-radius: $radiusL;
   overflow-y: auto;
+
+  &__scroll {
+    align-items: start;
+  }
 }
 
 .MessagesWrapper {

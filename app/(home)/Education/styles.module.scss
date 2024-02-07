@@ -1,0 +1,30 @@
+@import "../../styles/theme";
+
+.Wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: $radiusL;
+  background: url("/img/education-bg.svg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  @include themed {
+    background-color: t("bgPrimary");
+  }
+}
+
+.AstroEducation {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+
+.Link {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  fill: white;
+}

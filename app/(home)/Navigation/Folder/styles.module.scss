@@ -1,3 +1,4 @@
+@import "../../../styles/theme";
 $main-gap: 18px;
 
 .Wrapper {
@@ -8,7 +9,7 @@ $main-gap: 18px;
   height: calc(100% - 12px);
   padding: 8px;
   z-index: 2;
-  border-radius: 10px 0px 10px 10px;
+  border-radius: $radiusL 0px $radiusL $radiusL;
   margin-top: 12px;
   cursor: pointer;
   &:before {
@@ -18,7 +19,7 @@ $main-gap: 18px;
     right: 0;
     width: 60px;
     height: 13px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: $radiusL $radiusL 0px 0px;
     z-index: 2;
   }
   &:hover {

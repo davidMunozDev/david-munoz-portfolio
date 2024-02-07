@@ -25,8 +25,23 @@ p {
 
 :global(.theme--dark) {
   color: map-get(map-get($themes, "dark"), "colorPrimary");
+  overflow-y: auto;
+  background: map-get(map-get($themes, "dark"), "bgMain");
 }
 
 :global(.theme--light) {
   color: map-get(map-get($themes, "light"), "colorPrimary");
+  overflow-y: auto;
+  background: map-get(map-get($themes, "light"), "bgMain");
+}
+.theme--dark {
+  color: map-get(map-get($themes, "dark"), "colorPrimary");
+  overflow-y: auto;
+  background: map-get(map-get($themes, "dark"), "bgMain");
+}
+
+.theme--light {
+  color: map-get(map-get($themes, "light"), "colorPrimary");
+  overflow-y: auto;
+  background: map-get(map-get($themes, "light"), "bgMain");
 }

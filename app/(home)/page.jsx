@@ -7,6 +7,7 @@ import Chat from "./Chat";
 import ThemeSelection from "./ThemeSelection";
 import Position from "./Position";
 import Map from "./Map";
+import Education from "./Education";
 
 export default function Home() {
   return (
@@ -24,14 +25,7 @@ export default function Home() {
       <div className={styles.RightColumn}>
         <AstronautIntro />
         <ThemeSelection />
-        <div
-          style={{
-            backgroundColor: "#000000",
-            width: "100%",
-            height: "100%",
-            borderRadius: "10px",
-          }}
-        ></div>
+        <Education />
       </div>
     </div>
   );

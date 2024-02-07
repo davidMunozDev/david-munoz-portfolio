@@ -8,6 +8,7 @@ import {
 } from "@/lib/localStorage";
 import Messages from "./Messages";
 import Form from "./Form";
+import Icon from "@/app/components/Icon";
 
 const DEFAULT_MESSAGES = [
   "Hi! 👋🏻",
@@ -18,6 +19,7 @@ const DEFAULT_MESSAGES = [
 
 export default function Chat() {
   const [messages, setMessages] = useState(DEFAULT_MESSAGES);
+  const hour = "13:00";
 
   useEffect(() => {
     const newMessages = getFromStorage("messages") || [];
@@ -42,6 +44,11 @@ export default function Chat() {
 
   return (
     <div className={styles.Wrapper}>
+      <div className={styles.Header}>
+        <span>{hour}</span>
+        <div className={styles.Notch} />
+        <Icon name="battery" />
+      </div>
       <Messages messages={messages} />
       <Form onSubmit={sendMessage} />
     </div>

@@ -21,7 +21,7 @@
 }
 
 .LeftColumn {
-  @include columnRow(4, auto 260px 1fr);
+  @include columnRow(4, auto 260px minmax(190px, 1fr));
 }
 
 .CenterColumn {
@@ -29,5 +29,5 @@
 }
 
 .RightColumn {
-  @include columnRow(4, minmax(308px, 3fr) 90px 2fr);
+  @include columnRow(4, minmax(330px, 3fr) 90px minmax(200px, 1fr));
 }

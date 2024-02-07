@@ -1,12 +1,11 @@
 @import "../../styles/theme";
 
-$border-radius: 10px; //TODO move to global variable
 $color-primary: #ffffff;
 
 .Wrapper {
   display: grid;
   gap: 24px;
-  border-radius: $border-radius;
+  border-radius: $radiusL;
   padding: 16px;
   color: $color-primary;
   @include themed {
@@ -20,7 +19,7 @@ $color-primary: #ffffff;
 }
 
 .Avatar {
-  border-radius: $border-radius;
+  border-radius: $radiusL;
   display: block;
 }
 

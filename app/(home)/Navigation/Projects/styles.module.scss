@@ -9,7 +9,7 @@ $main-gap: 18px;
   padding: 10px;
   height: 100%;
   width: 100%;
-  border-radius: 10px; //TODO add vars
+  border-radius: $radiusL;
   overflow: hidden;
   cursor: pointer;
   @include themed {

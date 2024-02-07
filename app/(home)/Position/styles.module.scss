@@ -6,7 +6,7 @@
   height: 100%;
   position: relative;
   color: white;
-  border-radius: 10px;
+  border-radius: $radiusL;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,9 @@
 
 .Company {
   position: relative;
-  color: #313960;
+  @include themed {
+    color: t("bgPrimary");
+  }
   z-index: 5;
   &::after {
     content: "at BBVA Technology";

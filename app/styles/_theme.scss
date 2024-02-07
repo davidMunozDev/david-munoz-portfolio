@@ -4,31 +4,25 @@ $themes: (
     colorSecondary: #080d20,
     bgMain: #080d20,
     bgPrimary: #313960,
-    radiusL: 10px,
-    /*button styles*/ buttonBgPrimary:
-      linear-gradient(to right, #ab57ec 0%, #9726ed 50%, #2aabe4 100%),
-    buttonColorPrimary: #ffffff,
+    bgSecondary: #425183,
   ),
   "light": (
     colorPrimary: #080d20,
     colorSecondary: #ffffff,
     bgMain: linear-gradient(180deg, #f0e6f4 0%, #b3d8e1 100%),
     bgPrimary: #42b2e1,
-    radiusL: 10px,
-    /*button styles*/ buttonBgPrimary:
-      linear-gradient(to right, #ab57ec 0%, #9726ed 50%, #2aabe4 100%),
-    buttonColorPrimary: #ffffff,
+    bgSecondary: #425183,
   ),
 );
 
-$yellow: #b58900;
-$orange: #cb4b16;
-$red: #dc322f;
-$magenta: #d33682;
-$violet: #6c71c4;
-$blue: #268bd2;
-$cyan: #2aa198;
-$green: #859900;
+$radiusL: 10px;
+$buttonBgPrimary: linear-gradient(
+  to right,
+  #ab57ec 0%,
+  #9726ed 50%,
+  #2aabe4 100%
+);
+$buttonColorPrimary: #ffffff;
 
 @mixin themed() {
   @each $theme, $map in $themes {

@@ -1,7 +1,9 @@
+@import "../../styles/theme";
+
 .Wrapper {
   background: url("/img/map.png") no-repeat center;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: $radiusL;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -4,7 +4,7 @@
   height: 150px;
   width: 100%;
   position: relative;
-  border-radius: 10px;
+  border-radius: $radiusL;
   padding: 8px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 90px;
@@ -21,11 +21,14 @@
 .FormItem {
   border-radius: 8px;
   border: none;
-  background: #080d20;
+  @include themed {
+    background: t("bgSecondary");
+  }
   padding: 8px;
   color: white;
 
   &::placeholder {
+    color: #c0bebe;
     transition: all 0.3s ease-in-out;
   }
 

@@ -2,6 +2,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { FaSquareGithub, FaRegCalendarCheck } from "react-icons/fa6";
+import { IoBatteryFull } from "react-icons/io5";
 
 const IconComponent = ({ name, width, height, ...rest }) => {
   const props = { style: { width, height }, ...rest };
@@ -12,6 +13,7 @@ const IconComponent = ({ name, width, height, ...rest }) => {
     link: <MdOutlineArrowOutward {...props} />,
     moon: <BsFillMoonFill {...props} />,
     sun: <BsFillSunFill {...props} />,
+    battery: <IoBatteryFull {...props} />,
   };
 
   return icons[name];
