@@ -23,8 +23,20 @@ export default function Profile() {
         </div>
       </div>
       <div className={styles.Social}>
-        <Icon width="32" height="32" name="linkedIn" />
-        <Icon width="32" height="32" name="gitHub" />
+        <a
+          href="https://www.linkedin.com/in/davidmu%C3%B1ozviejo/"
+          style={{ height: "24px" }}
+          target="_blank"
+        >
+          <Icon width="24" height="24" name="linkedIn" />
+        </a>
+        <a
+          href="https://github.com/davidMunozDev"
+          style={{ height: "28px" }}
+          target="_blank"
+        >
+          <Icon width="28" height="28" name="gitHub" />
+        </a>
         <Button>Download CV</Button>
       </div>
     </div>
