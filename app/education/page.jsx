@@ -1,3 +1,3 @@
 export default function Projects() {
-  return <main>Projects page</main>;
+  return <main>education page</main>;
 }

@@ -1,12 +1,13 @@
 import styles from "./styles.module.scss";
 import Icon from "@/app/components/Icon";
+import Link from "next/link";
 
-export default function Folder({ children, style = "primary" }) {
+export default function Folder({ children, style = "primary", href }) {
   return (
-    <div className={`${styles.Wrapper} ${styles[style]}`}>
+    <Link href={href} className={`${styles.Wrapper} ${styles[style]}`}>
       <Icon className={styles.LinkIcon} width="28" height="28" name="link" />
       <h2>{children}</h2>
       <div className={styles.Paper} />
-    </div>
+    </Link>
   );
 }

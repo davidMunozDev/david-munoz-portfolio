@@ -8,7 +8,7 @@ export default function Form({ onSubmit }) {
 
   const submitForm = (form) => {
     onSubmit(form);
-    reset();
+    reset({ message: "" });
   };
 
   return (

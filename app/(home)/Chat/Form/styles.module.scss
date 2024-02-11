@@ -13,8 +13,23 @@
     "msg msg msg msg send";
   grid-template-rows: 30px auto;
   gap: 8px;
+  animation: appear 2.5s linear;
   @include themed {
     background: t("bgPrimary");
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

@@ -18,24 +18,37 @@ const DEFAULT_MESSAGES = [
 ].map((msg) => ({ message: msg, isUserMessage: false }));
 
 export default function Chat() {
-  const [messages, setMessages] = useState(DEFAULT_MESSAGES);
+  const [messages, setMessages] = useState([]);
+  const [messagesAdded, setMessagesAdded] = useState(0);
+
   const hour = "13:00";
+  const isAnimationRunning = messagesAdded < DEFAULT_MESSAGES.length;
 
   useEffect(() => {
-    const newMessages = getFromStorage("messages") || [];
+    const userMessages = getFromStorage("messages") || [];
+    if (userMessages.length) {
+      setMessages([...DEFAULT_MESSAGES, ...userMessages]);
+    }
+    if (isAnimationRunning) {
+      const timer = setTimeout(() => {
+        setMessages((mensajesActuales) => [
+          ...mensajesActuales,
+          DEFAULT_MESSAGES[messagesAdded],
+        ]);
+        setMessagesAdded(messagesAdded + 1);
+      }, 1150);
 
-    setMessages((oldMsgs) => [...oldMsgs, ...newMessages]);
-  }, []);
+      return () => clearTimeout(timer);
+    }
+  }, [messagesAdded, isAnimationRunning]);
 
   const sendMessage = (form) => {
-    console.log(form, "hello");
     const newMessages = [
       ...messages,
       { message: form.message, isUserMessage: true },
     ];
 
     setMessages(newMessages);
-
     saveInStorage(
       "messages",
       newMessages.filter((message) => message.isUserMessage)
@@ -46,11 +59,26 @@ export default function Chat() {
     <div className={styles.Wrapper}>
       <div className={styles.Header}>
         <span>{hour}</span>
-        <div className={styles.Notch} />
+        <div
+          className={isAnimationRunning ? styles.Notch__typing : styles.Notch}
+        >
+          {isAnimationRunning && (
+            <>
+              David is typing
+              <i className={styles.Bubble}></i>
+              <i className={styles.Bubble}></i>
+              <i className={styles.Bubble}></i>
+            </>
+          )}
+        </div>
         <Icon name="battery" />
       </div>
-      <Messages messages={messages} />
-      <Form onSubmit={sendMessage} />
+      <Messages messages={messages} isAnimationRunning={isAnimationRunning} />
+      {!isAnimationRunning ? (
+        <Form onSubmit={sendMessage} />
+      ) : (
+        <div className={styles.FormPlaceholder} />
+      )}
     </div>
   );
 }

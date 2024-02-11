@@ -1,10 +1,11 @@
 import Icon from "@/app/components/Icon";
 import styles from "./styles.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className={styles.Wrapper}>
+    <Link className={styles.Wrapper} href="/projects">
       <h2>Projects</h2>
       <div className={styles.PaperDark} />
       <div className={styles.PaperMedium} />
@@ -17,6 +18,6 @@ export default function Projects() {
         className={styles.Astronaut}
       />
       <Icon className={styles.Link} name="link" width="28" height="28" />
-    </div>
+    </Link>
   );
 }

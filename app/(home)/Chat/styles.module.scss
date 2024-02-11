@@ -13,6 +13,10 @@
   border-radius: $radiusL;
 }
 
+.FormPlaceholder {
+  height: 150px;
+}
+
 .Header {
   position: absolute;
   background: rgba(255, 255, 255, 0.3);
@@ -26,11 +30,87 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
+  animation: appear 2.3s ease;
+}
+
+@keyframes appear {
+  0%,
+  20% {
+    transform: scaleY(0);
+    top: -100%;
+  }
+  100% {
+    transform: scaleY(1);
+    top: 0;
+  }
 }
 
 .Notch {
-  border-radius: 14px;
   width: 88px;
   height: 18px;
+  border-radius: 14px;
   background: #080d20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: all 0.5s;
+  &__typing {
+    @extend .Notch;
+    width: 180px;
+    height: 28px;
+    color: #8b8989;
+    font-size: 12px;
+  }
+  animation: opacity 2s ease;
+}
+
+@keyframes opacity {
+  0%,
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+$color: #ddd;
+$circle_size: 8px;
+$animation_time: 1.5s;
+$animation_delay: 0.5s;
+
+.Bubble {
+  width: $circle_size;
+  height: $circle_size;
+
+  border-radius: 100%;
+  background-color: #bbb;
+
+  animation: fade_in_out $animation_time infinite;
+  animation-delay: $animation_delay / 2;
+
+  &:first-of-type {
+    margin-left: $circle_size;
+
+    animation-delay: 0s;
+  }
+
+  &:last-of-type {
+    margin-right: $circle_size;
+
+    animation-delay: $animation_delay;
+  }
+}
+
+@keyframes fade_in_out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
 }

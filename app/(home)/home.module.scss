@@ -22,6 +22,7 @@
 
 .LeftColumn {
   @include columnRow(4, auto 260px minmax(190px, 1fr));
+  animation: left-to-right 9s cubic-bezier(0.27, 0.68, 0.55, 1.06);
 }
 
 .CenterColumn {
@@ -30,4 +31,34 @@
 
 .RightColumn {
   @include columnRow(4, minmax(330px, 3fr) 90px minmax(200px, 1fr));
+  animation: right-to-left 9s cubic-bezier(0.27, 0.68, 0.55, 1.06);
+}
+
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

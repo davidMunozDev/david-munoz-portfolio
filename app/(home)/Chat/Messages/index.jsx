@@ -4,7 +4,7 @@ import { applyStyles } from "@/lib/styleHelpers";
 import styles from "./styles.module.scss";
 import { useRef, useEffect, useState } from "react";
 
-export default function Messages({ messages }) {
+export default function Messages({ messages, isAnimationRunning }) {
   const ref = useRef(null);
   const [hasScroll, setHasScroll] = useState(false);
 
@@ -23,13 +23,17 @@ export default function Messages({ messages }) {
     >
       <div className={styles.MessagesWrapper}>
         {messages.map(({ message, isUserMessage }, i) => (
-          <div
-            className={
-              isUserMessage ? styles.Message__user : styles.Message__default
-            }
-            key={i}
-          >
-            {message}
+          <div className={styles.MessageContainer} key={i}>
+            <div
+              className={applyStyles([
+                isUserMessage ? styles.Message__user : styles.Message__default,
+                !isAnimationRunning &&
+                  messages.length === i + 1 &&
+                  styles.Message__last,
+              ])}
+            >
+              {message}
+            </div>
           </div>
         ))}
       </div>

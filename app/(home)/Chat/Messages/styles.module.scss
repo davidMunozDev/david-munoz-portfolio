@@ -3,12 +3,11 @@
 .Wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
   min-height: 300px;
   width: 100%;
   padding: 16px;
-  padding-top: 40px;
+  padding-top: 70px;
   background: linear-gradient(0deg, #031556, #266ba1, #44b4e0);
   background-size: 150% 150%;
   animation: backgroundGradient 6s ease infinite;
@@ -21,10 +20,11 @@
 }
 
 .MessagesWrapper {
-  max-width: 300px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  transition: height 0.5s;
 }
 
 .Message {
@@ -32,6 +32,7 @@
   border-radius: 24px;
   font-size: 16px;
   padding: 10px 16px;
+  animation: up 0.3s linear;
 
   &__default {
     @extend .Message;
@@ -43,10 +44,14 @@
     background: #2c92ff;
     color: #ffffff;
   }
+  &__last {
+    @extend .Message;
+    border-radius: 24px 24px 24px 0px;
+  }
 }
 
-.Message:last-of-type {
-  border-radius: 24px 24px 24px 0px;
+.MessageContainer {
+  width: 100%;
 }
 
 @keyframes backgroundGradient {
@@ -60,5 +65,16 @@
 
   100% {
     background-position: 0 0;
+  }
+}
+
+@keyframes up {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
