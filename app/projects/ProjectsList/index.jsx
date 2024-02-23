@@ -1,10 +1,12 @@
 "use client";
 
+import { applyStyles } from "@/lib/styleHelpers";
 import styles from "./styles.module.scss";
 import { useProjectsContext } from "@/lib/projects-context";
+import Image from "next/image";
 
 const ProjectsList = ({ part }) => {
-  const { projects, onSelectProject } = useProjectsContext();
+  const { projects, onSelectProject, selectedProject } = useProjectsContext();
 
   return (
     <div className={styles.Wrapper}>
@@ -13,9 +15,23 @@ const ProjectsList = ({ part }) => {
           <div
             style={{ backgroundImage: `url("/projects/project-${id}.png")` }}
             onClick={() => onSelectProject(id)}
-            className={styles.Project__content}
+            className={applyStyles([
+              styles.Project__content,
+              id === selectedProject.id && styles.Project__selected,
+            ])}
             key={id}
           >
+            <Image
+              className={styles.Union}
+              style={{
+                [part === 0 ? "right" : "left"]: "-26px",
+                ...(i !== 1 ? { [i === 0 ? "bottom" : "top"]: "15%" } : {}),
+              }}
+              src={`/img/union.svg`}
+              alt="union"
+              width={22}
+              height={40}
+            />
             <div className={styles.MoreInfo}>More info</div>
             <span className={styles.ProjectName}>{name}</span>
             <span className={styles.ProjectNumber}>{id}</span>

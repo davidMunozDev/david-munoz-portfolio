@@ -21,5 +21,12 @@
   &:hover {
     background-position: right center;
   }
+
+  &__disabled {
+    @extend .Button;
+    color: #d8cdcd;
+    background-image: linear-gradient(to right, #717171 0%, #e4e4e4 100%);
+    pointer-events: none;
+  }
   cursor: pointer;
 }

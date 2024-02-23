@@ -1,74 +1,87 @@
 {
+  "skills": [
+    "React",
+    "Scss",
+    "TypeScript",
+    "Node",
+    "JavaScript",
+    "Python",
+    "CSS",
+    "HTML",
+    "Angular",
+    "Tailwind",
+    "Next.js"
+  ],
   "projects": [
     {
       "url": "https://www.google.com/",
-      "name": "Project Name",
-      "id": 1,
+      "name": "Weather App",
+      "id": "01",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
-      "technologies": ["react", "scss", "typesript", "node"]
+      "skills": ["Next.js", "CSS", "TypeScript"]
+    },
+    {
+      "url": "https://www.google.com/",
+      "name": "Proptech App",
+      "id": "02",
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
+      "skills": ["React", "Scss", "JavaScript", "Node"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
-      "id": 2,
+      "id": "03",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
-      "technologies": ["react", "scss", "typesript", "node"]
+      "skills": ["React", "Scss", "TypeScript"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
-      "id": 3,
+      "id": "04",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
-      "technologies": ["react", "scss", "typesript", "node"]
+      "skills": ["React", "Scss", "TypeScript", "HTML"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
-      "id": 4,
+      "id": "05",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
-      "technologies": ["react", "scss", "typesript", "node"]
+      "skills": ["React", "Scss", "JavaScript"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
-      "id": 5,
+      "id": "06",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
-      "technologies": ["react", "scss", "typesript", "node"]
+      "skills": ["Angular", "Tailwind", "TypeScript", "HTML"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
-      "id": 6,
+      "id": "07",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
-      "technologies": ["react", "scss", "typesript", "node"]
+      "skills": ["Next.js", "Tailwind", "JavaScript", "HTML"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
-      "id": 7,
+      "id": "08",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
-      "technologies": ["react", "scss", "typesript", "node"]
+      "skills": ["Python"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
-      "id": 8,
+      "id": "09",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
-      "technologies": ["react", "scss", "typesript", "node"]
+      "skills": ["Angular", "Tailwind", "TypeScript", "Node"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
-      "id": 9,
+      "id": "10",
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
-      "technologies": ["react", "scss", "typesript", "node"]
-    },
-    {
-      "url": "https://www.google.com/",
-      "name": "Project Name",
-      "id": 10,
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat.",
-      "technologies": ["react", "scss", "typesript", "node"]
+      "skills": ["Python"]
     }
   ]
 }

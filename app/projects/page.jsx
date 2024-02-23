@@ -1,10 +1,11 @@
 import styles from "./projects.module.scss";
 import ProjectsList from "./ProjectsList";
-import ProjectDetail from "./ProjectsList";
 import Actions from "./Actions";
+import Detail from "./Detail";
+import Header from "@/app/components/Header";
 import { ProjectsContextProvider } from "@/lib/projects-context";
 
-export default function Home() {
+export default function Projects() {
   return (
     <ProjectsContextProvider>
       <div className={styles.Container}>
@@ -12,8 +13,8 @@ export default function Home() {
           <ProjectsList part={0} />
         </div>
         <div className={styles.CenterColumn}>
-          <div></div>
-          <div></div>
+          <Header currentPage="Projects" />
+          <Detail />
           <Actions />
         </div>
         <div className={styles.RightColumn}>

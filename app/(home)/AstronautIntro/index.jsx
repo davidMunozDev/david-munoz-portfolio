@@ -18,6 +18,8 @@ export default function AstronautIntro() {
             <div key={star} className={styles[`ShootingStar_${star}`]} />
           ))}
         </div>
+
+        <div className={styles.Welcome}>Welcome to my world!</div>
       </div>
     </div>
   );

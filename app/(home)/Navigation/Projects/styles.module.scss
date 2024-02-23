@@ -22,6 +22,17 @@ $main-gap: 18px;
     font-size: 16px;
     z-index: 4;
   }
+
+  &:hover {
+    .PaperMedium {
+      width: calc(47% - 16px);
+      height: calc(100% - 26px);
+    }
+    .PaperLight {
+      width: calc(47% - 32px);
+      height: calc(100% - 42px);
+    }
+  }
 }
 
 @mixin paper($bg, $h, $w, $z) {
@@ -42,10 +53,12 @@ $main-gap: 18px;
 
 .PaperMedium {
   @include paper(#404a7e, calc(100% - 32px), calc(45% - 16px), 2);
+  transition: all 0.5s;
 }
 
 .PaperLight {
   @include paper(#5c69ac, calc(100% - 48px), calc(45% - 32px), 3);
+  transition: all 0.2s;
 }
 
 .Astronaut {

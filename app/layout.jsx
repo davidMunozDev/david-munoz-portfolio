@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./styles/globals.scss";
 import { ThemeContextProvider } from "@/lib/theme-context";
+import { MenuContextProvider } from "@/lib/menu-context";
+import Menu from "@/app/components/Menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +15,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeContextProvider>{children}</ThemeContextProvider>
+        <ThemeContextProvider>
+          <MenuContextProvider>
+            {children}
+            <Menu />
+          </MenuContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

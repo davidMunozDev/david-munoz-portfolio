@@ -21,7 +21,11 @@ export default function Chat() {
   const [messages, setMessages] = useState([]);
   const [messagesAdded, setMessagesAdded] = useState(0);
 
-  const hour = "13:00";
+  const date = new Date().toLocaleDateString("en-UK", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  });
   const isAnimationRunning = messagesAdded < DEFAULT_MESSAGES.length;
 
   useEffect(() => {
@@ -36,7 +40,7 @@ export default function Chat() {
           DEFAULT_MESSAGES[messagesAdded],
         ]);
         setMessagesAdded(messagesAdded + 1);
-      }, 1150);
+      }, 1000);
 
       return () => clearTimeout(timer);
     }
@@ -58,7 +62,7 @@ export default function Chat() {
   return (
     <div className={styles.Wrapper}>
       <div className={styles.Header}>
-        <span>{hour}</span>
+        <span>{date}</span>
         <div
           className={isAnimationRunning ? styles.Notch__typing : styles.Notch}
         >

@@ -1,8 +1,10 @@
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
-import { FaSquareGithub, FaRegCalendarCheck } from "react-icons/fa6";
-import { IoBatteryFull } from "react-icons/io5";
+import { FaSquareGithub, FaRegCalendarCheck, FaFilter } from "react-icons/fa6";
+import { IoBatteryFull, IoMenu, IoClose } from "react-icons/io5";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { IoMdCloseCircle } from "react-icons/io";
 
 const IconComponent = ({ name, width, height, ...rest }) => {
   const props = { style: { width, height }, ...rest };
@@ -14,6 +16,12 @@ const IconComponent = ({ name, width, height, ...rest }) => {
     moon: <BsFillMoonFill {...props} />,
     sun: <BsFillSunFill {...props} />,
     battery: <IoBatteryFull {...props} />,
+    arrowLeft: <FaArrowLeft {...props} />,
+    arrowRight: <FaArrowRight {...props} />,
+    filter: <FaFilter {...props} />,
+    close: <IoMdCloseCircle {...props} />,
+    cross: <IoClose {...props} />,
+    menu: <IoMenu {...props} />,
   };
 
   return icons[name];

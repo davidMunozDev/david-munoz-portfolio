@@ -3,11 +3,78 @@
 .Wrapper {
   width: 100%;
   height: 100%;
-  padding: 8px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
   border-radius: $radiusL;
+  position: relative;
+  border: 4px solid white;
+
+  &:hover {
+    cursor: url("/img/cursor-view-more.svg"), auto;
+  }
+  cursor: pointer;
+}
+
+.DetailImage {
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.Content {
+  position: relative;
+  z-index: 1;
+}
+
+.Skills {
+  @extend .Content;
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ProjectNumber {
+  @extend .Content;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  font-size: 28px;
+}
+
+.ProjectName {
+  @extend .Content;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  font-size: 28px;
+}
+
+.ProjectDescription {
+  @extend .Content;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.AstroImage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-top: -96px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.LinkIcon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: #ffffff58;
 }

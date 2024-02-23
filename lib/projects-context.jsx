@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useMemo, useState } from "react";
 import { projects as projectsList } from "@/portfolio-data.json";
 
 const ProjectsContext = createContext({});
@@ -37,14 +37,31 @@ const getProjects = (projectsList, size) => {
 
 export function ProjectsContextProvider({ children }) {
   const [page, setPage] = useState(0);
-  const [selectedProject, setSelectedProject] = useState(projectsList[0].id);
-  const projects = getProjects(projectsList, 3);
+  const [selectedProject, setSelectedProject] = useState(projectsList[0]);
+  const [filters, setFilters] = useState([]);
+
+  const projects = useMemo(() => {
+    const projectsFiltered = projectsList.filter(({ skills }) => {
+      const unusedSkills = skills.filter((skill) => !filters.includes(skill));
+      return unusedSkills.length !== skills.length;
+    });
+
+    return getProjects(filters.length ? projectsFiltered : projectsList, 3);
+  }, [filters]);
 
   const goForward = () => setPage((page) => page + 2);
   const goBack = () => setPage((page) => page - 2);
   const onSelectProject = (selectedId) => {
     const project = projectsList.find(({ id }) => id === selectedId);
     setSelectedProject(project);
+  };
+  const selectFilter = (filter) => {
+    setFilters((filters) =>
+      filters.includes(filter)
+        ? filters.filter((oldFilter) => oldFilter !== filter)
+        : [...filters, filter]
+    );
+    setPage(0);
   };
 
   const canGoBack = page - 2 >= 0;
@@ -58,8 +75,10 @@ export function ProjectsContextProvider({ children }) {
         goBack,
         canGoBack,
         canGoForward,
-        onSelectProject,
         selectedProject,
+        filters,
+        selectFilter,
+        onSelectProject,
       }}
     >
       {children}
