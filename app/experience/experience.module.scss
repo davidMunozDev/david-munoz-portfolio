@@ -9,11 +9,23 @@
   @include themed {
     background: t("bgMain");
   }
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1.5fr;
+}
+
+.LeftColumn {
+  display: grid;
+  grid-template-rows: 180px 1fr;
+  gap: 22px;
 }
 
 .CenterColumn {
   display: grid;
-  grid-template-rows: 90px 1fr 80px;
+  grid-template-rows: 95px 1fr;
+  gap: 22px;
+}
+
+.RightColumn {
+  display: grid;
+  grid-template-rows: 95px 1fr;
   gap: 22px;
 }

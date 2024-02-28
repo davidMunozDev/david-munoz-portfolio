@@ -26,9 +26,6 @@ export default function Menu({ currentPage }) {
       <Link onClick={manageMenu} href="/about">
         ABOUT
       </Link>
-      <Link onClick={manageMenu} href="/education">
-        EDUCATION
-      </Link>
       <Link onClick={manageMenu} href="/experience">
         EXPERIENCE
       </Link>
