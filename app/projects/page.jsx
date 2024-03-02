@@ -3,7 +3,7 @@ import ProjectsList from "./ProjectsList";
 import Actions from "./Actions";
 import Detail from "./Detail";
 import Header from "@/app/components/Header";
-import { ProjectsContextProvider } from "@/lib/projects-context";
+import { ProjectsContextProvider } from "@/app/projects/projects-context";
 
 export default function Projects() {
   return (

@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 import Button from "@/app/components/Button";
 import { useState } from "react";
 import { skills } from "@/portfolio-data.json";
-import { useProjectsContext } from "@/lib/projects-context";
+import { useProjectsContext } from "@/app/projects/projects-context";
 
 const Filter = ({}) => {
   const { filters, selectFilter } = useProjectsContext();

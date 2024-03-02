@@ -2,7 +2,7 @@
 
 import { applyStyles } from "@/lib/styleHelpers";
 import styles from "./styles.module.scss";
-import { useProjectsContext } from "@/lib/projects-context";
+import { useProjectsContext } from "@/app/projects/projects-context";
 import Image from "next/image";
 
 const ProjectsList = ({ part }) => {

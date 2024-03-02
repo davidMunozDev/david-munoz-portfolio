@@ -2,7 +2,7 @@
 
 import Pagination from "./Pagination";
 import Filter from "./Filter";
-import { useProjectsContext } from "@/lib/projects-context";
+import { useProjectsContext } from "@/app/projects/projects-context";
 import styles from "./styles.module.scss";
 
 const Actions = () => {

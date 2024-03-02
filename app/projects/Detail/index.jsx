@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.scss";
-import { useProjectsContext } from "@/lib/projects-context";
+import { useProjectsContext } from "@/app/projects/projects-context";
 import Tag from "@/app/components/Tag";
 import Icon from "@/app/components/Icon";
 

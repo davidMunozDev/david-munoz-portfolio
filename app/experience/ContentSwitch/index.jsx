@@ -1,14 +1,18 @@
 "use client";
 import Toggle from "@/app/components/Toggle";
+import {
+  useExperienceContext,
+  CONTENTS,
+} from "@/app/experience/experience-context";
 
 const ContentSwitch = ({}) => {
-  // const { experience } = useExperience();
+  const { selectedContent, onSelectContent } = useExperienceContext();
   return (
     <Toggle
-      firstOpt={{ value: "companies", content: "Companies" }}
-      lastOpt={{ value: "education", content: "Education" }}
-      onChange={() => console.log("hola")}
-      value={"companies"}
+      firstOpt={{ value: CONTENTS.companies, content: <span>Companies</span> }}
+      lastOpt={{ value: CONTENTS.education, content: <span>Education</span> }}
+      onChange={onSelectContent}
+      value={selectedContent}
     />
   );
 };
