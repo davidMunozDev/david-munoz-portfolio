@@ -23,6 +23,18 @@ p {
   margin: 0;
 }
 
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:global(.rendered) {
+  animation: none;
+}
+.rendered {
+  animation: none;
+}
+
 :global(.theme--dark) {
   color: map-get(map-get($themes, "dark"), "colorPrimary");
   overflow-y: auto;

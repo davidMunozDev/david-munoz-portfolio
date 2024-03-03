@@ -1,16 +1,18 @@
 "use client";
 
 import { createContext, useContext, useMemo, useState } from "react";
-import { projects as projectsList } from "@/portfolio-data.json";
+import { projects as projectsList } from "@/app/lib/portfolio-data.json";
+import { useParams, useRouter } from "next/navigation";
 
 const ExperienceContext = createContext({});
 export const CONTENTS = {
-  companies: "companies",
+  companies: "work",
   education: "education",
 };
 
 export function ExperienceContextProvider({ children }) {
-  const [selectedContent, setSelectedContent] = useState(CONTENTS.companies);
+  const router = useRouter();
+  const { content } = useParams();
   // const [selectedProject, setSelectedProject] = useState(projectsList[0]);
   // const [filters, setFilters] = useState([]);
 
@@ -38,16 +40,15 @@ export function ExperienceContextProvider({ children }) {
   // };
 
   const onSelectContent = () => {
-    console.log("onSelectContent");
-    setSelectedContent((content) =>
-      content === CONTENTS.companies ? CONTENTS.education : CONTENTS.companies
-    );
+    const selectedContent =
+      content === CONTENTS.companies ? CONTENTS.education : CONTENTS.companies;
+    router.push(`/experience/${selectedContent}`);
   };
 
   return (
     <ExperienceContext.Provider
       value={{
-        selectedContent,
+        selectedContent: content,
         onSelectContent,
       }}
     >

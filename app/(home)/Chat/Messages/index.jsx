@@ -1,6 +1,6 @@
 "use client";
 
-import { applyStyles } from "@/lib/styleHelpers";
+import { applyStyles } from "@/app/lib/styleHelpers";
 import styles from "./styles.module.scss";
 import { useRef, useEffect, useState } from "react";
 

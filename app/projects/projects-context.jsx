@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useMemo, useState } from "react";
-import { projects as projectsList } from "@/portfolio-data.json";
+import { projects as projectsList } from "@/app/lib/portfolio-data.json";
 
 const ProjectsContext = createContext({});
 

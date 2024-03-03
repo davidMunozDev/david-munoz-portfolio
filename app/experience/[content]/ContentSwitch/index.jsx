@@ -3,13 +3,13 @@ import Toggle from "@/app/components/Toggle";
 import {
   useExperienceContext,
   CONTENTS,
-} from "@/app/experience/experience-context";
+} from "@/app/experience/[content]/experience-context";
 
 const ContentSwitch = ({}) => {
   const { selectedContent, onSelectContent } = useExperienceContext();
   return (
     <Toggle
-      firstOpt={{ value: CONTENTS.companies, content: <span>Companies</span> }}
+      firstOpt={{ value: CONTENTS.companies, content: <span>Work</span> }}
       lastOpt={{ value: CONTENTS.education, content: <span>Education</span> }}
       onChange={onSelectContent}
       value={selectedContent}

@@ -20,14 +20,16 @@ const Detail = () => {
         height="140"
         className={styles.AstroImage}
       />
-      <Image
-        src={`/projects/project-${id}.png`}
-        alt="project image detail"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
-        className={styles.DetailImage}
-      />
+      <div className={styles.DetailImage}>
+        <div className={styles.shadow}></div>
+        <Image
+          src={`/projects/project-${id}.png`}
+          alt="project image detail"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        />
+      </div>
       <div className={styles.LinkIcon}>
         <Icon name="link" width="30" height="30" />
       </div>

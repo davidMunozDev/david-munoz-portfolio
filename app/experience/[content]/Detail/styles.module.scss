@@ -1,17 +1,12 @@
-@import "../../styles/theme";
+@import "../../../styles/theme";
 
 .Wrapper {
   width: 100%;
   height: 100%;
   padding: 32px;
-  display: flex;
-  gap: 28px;
-  flex-direction: column;
-  align-items: center;
   border-radius: $radiusL;
-
   @include themed {
-    background: t("bgPrimary");
+    border: 4px solid t("bgPrimary");
   }
 }
 

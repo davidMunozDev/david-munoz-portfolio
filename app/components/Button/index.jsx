@@ -1,11 +1,11 @@
-import { applyStyles } from "@/lib/styleHelpers";
+import { applyStyles } from "@/app/lib/styleHelpers";
 import styles from "./styles.module.scss";
 
 export default function Button({
   children,
   className,
   disabled,
-  onClick = () => {},
+  onClick,
   ...props
 }) {
   return (

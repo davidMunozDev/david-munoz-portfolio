@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 
 export default function Education() {
   return (
-    <Link href="/education" className={styles.Wrapper}>
+    <Link href="/experience/education" className={styles.Wrapper}>
       <Image
         src="/img/astro-education.svg"
         alt="astronaut in home"

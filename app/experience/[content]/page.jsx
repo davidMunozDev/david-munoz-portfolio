@@ -1,9 +1,10 @@
 import styles from "./experience.module.scss";
 import Header from "@/app/components/Header";
-import TotalExperience from "./TotalExperience";
+import Highlight from "./Highlight";
 import Technologies from "./Technologies";
 import Detail from "./Detail";
 import ContentSwitch from "./ContentSwitch";
+import ExperiencesList from "./ExperiencesList";
 import { ExperienceContextProvider } from "./experience-context";
 
 export default function Experience() {
@@ -11,7 +12,7 @@ export default function Experience() {
     <ExperienceContextProvider>
       <div className={styles.Container}>
         <div className={styles.LeftColumn}>
-          <TotalExperience />
+          <Highlight />
           <Technologies />
         </div>
         <div className={styles.CenterColumn}>
@@ -20,7 +21,7 @@ export default function Experience() {
         </div>
         <div className={styles.RightColumn}>
           <ContentSwitch />
-          <div></div>
+          <ExperiencesList />
         </div>
       </div>
     </ExperienceContextProvider>

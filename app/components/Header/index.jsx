@@ -2,8 +2,8 @@
 
 import Icon from "../Icon";
 import styles from "./styles.module.scss";
-import { useThemeContext } from "@/lib/theme-context";
-import { useMenuContext } from "@/lib/menu-context";
+import { useThemeContext } from "@/app/lib/theme-context";
+import { useMenuContext } from "@/app/lib/menu-context";
 
 export default function Header({ currentPage }) {
   const { theme, changeTheme } = useThemeContext();

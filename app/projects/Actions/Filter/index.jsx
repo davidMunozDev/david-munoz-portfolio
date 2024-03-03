@@ -4,7 +4,7 @@ import Icon from "@/app/components/Icon";
 import styles from "./styles.module.scss";
 import Button from "@/app/components/Button";
 import { useState } from "react";
-import { skills } from "@/portfolio-data.json";
+import { skills } from "@/app/lib/portfolio-data.json";
 import { useProjectsContext } from "@/app/projects/projects-context";
 
 const Filter = ({}) => {
@@ -38,7 +38,7 @@ const Filter = ({}) => {
         {!isModalOpen ? (
           <span>
             {filters.length ? <i className={styles.Dot} /> : null}
-            Filter <Icon width="18" name="filter" />
+            Filter by tech <Icon width="18" name="filter" />
           </span>
         ) : (
           <span>

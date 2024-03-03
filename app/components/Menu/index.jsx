@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Icon from "../Icon";
 import styles from "./styles.module.scss";
-import { useMenuContext } from "@/lib/menu-context";
+import { useMenuContext } from "@/app/lib/menu-context";
 
 export default function Menu({ currentPage }) {
   const { isMenuOpen, manageMenu } = useMenuContext();
@@ -26,8 +26,11 @@ export default function Menu({ currentPage }) {
       <Link onClick={manageMenu} href="/about">
         ABOUT
       </Link>
-      <Link onClick={manageMenu} href="/experience">
-        EXPERIENCE
+      <Link onClick={manageMenu} href="/experience/work">
+        WORK
+      </Link>
+      <Link onClick={manageMenu} href="/experience/education">
+        EDUCATION
       </Link>
     </div>
   );

@@ -1,10 +1,13 @@
 import { Inter } from "next/font/google";
 import "./styles/globals.scss";
-import { ThemeContextProvider } from "@/lib/theme-context";
-import { MenuContextProvider } from "@/lib/menu-context";
+import { ThemeContextProvider } from "@/app/lib/theme-context";
+import { MenuContextProvider } from "@/app/lib/menu-context";
 import Menu from "@/app/components/Menu";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  weights: ["400", "700", "600"],
+});
 
 export const metadata = {
   title: "Create Next App",

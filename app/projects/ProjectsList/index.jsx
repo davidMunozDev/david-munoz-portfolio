@@ -1,6 +1,6 @@
 "use client";
 
-import { applyStyles } from "@/lib/styleHelpers";
+import { applyStyles } from "@/app/lib/styleHelpers";
 import styles from "./styles.module.scss";
 import { useProjectsContext } from "@/app/projects/projects-context";
 import Image from "next/image";
@@ -31,6 +31,7 @@ const ProjectsList = ({ part }) => {
               alt="union"
               width={22}
               height={40}
+              priority={false}
             />
             <div className={styles.MoreInfo}>More info</div>
             <span className={styles.ProjectName}>{name}</span>

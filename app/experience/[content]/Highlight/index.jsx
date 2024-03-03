@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
-export default function TotalExperience() {
+export default function Highlight() {
   return (
     <div className={styles.Wrapper}>
       <Image

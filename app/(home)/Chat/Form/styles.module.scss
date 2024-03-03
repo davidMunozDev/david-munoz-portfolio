@@ -14,6 +14,11 @@
   grid-template-rows: 30px auto;
   gap: 8px;
   animation: appear 2.5s linear;
+
+  :global(.rendered) & {
+    animation: none;
+  }
+
   @include themed {
     background: t("bgPrimary");
   }

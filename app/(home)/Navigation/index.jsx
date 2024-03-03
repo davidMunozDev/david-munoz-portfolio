@@ -9,8 +9,8 @@ export default function Navigation() {
         <Folder href="/about" style="primary">
           About me
         </Folder>
-        <Folder href="/experience" style="secondary">
-          Experience
+        <Folder href="/experience/work" style="secondary">
+          Work
         </Folder>
       </div>
       <Projects />

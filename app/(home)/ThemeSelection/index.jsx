@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./styles.module.scss";
-import { useThemeContext } from "@/lib/theme-context";
+import { useThemeContext } from "@/app/lib/theme-context";
 import Icon from "@/app/components/Icon";
 
 export default function ThemeSelection() {

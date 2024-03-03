@@ -1,16 +1,28 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState, useRef } from "react";
 import { get as getFromStorage, save as saveInStorage } from "./localStorage";
+import { applyStyles } from "./styleHelpers";
+import { usePathname } from "next/navigation";
 
 const ThemeContext = createContext({});
 
 export function ThemeContextProvider({ children }) {
+  const path = usePathname();
   const [theme, setTheme] = useState("dark");
+  const [status, setStatus] = useState("firstRender");
+  const isRendered = useRef(false);
 
   useEffect(() => {
     getTheme();
   }, []);
+
+  useEffect(() => {
+    if (path && isRendered.current) {
+      setStatus("rendered");
+    }
+    isRendered.current = true;
+  }, [path]);
 
   const getTheme = () => {
     const selectedTheme = getFromStorage("theme");
@@ -28,9 +40,15 @@ export function ThemeContextProvider({ children }) {
       value={{
         theme,
         changeTheme,
+        isRendered: status === "rendered",
       }}
     >
-      <div className={theme === "dark" ? "theme--dark" : "theme--light"}>
+      <div
+        className={applyStyles([
+          theme === "dark" ? "theme--dark" : "theme--light",
+          status,
+        ])}
+      >
         {children}
       </div>
     </ThemeContext.Provider>

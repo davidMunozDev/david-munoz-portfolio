@@ -10,17 +10,21 @@
   align-items: center;
   border-radius: $radiusL;
   position: relative;
-  border: 4px solid white;
-
-  &:hover {
-    cursor: url("/img/cursor-view-more.svg"), auto;
+  @include themed {
+    border: 4px solid t("bgPrimary");
   }
+  color: rgba(255, 255, 255, 0.882);
   cursor: pointer;
 }
 
 .DetailImage {
   z-index: 0;
   opacity: 0.4;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  clip-path: polygon(100% 33%, 0 100%, 100% 100%);
 }
 
 .Content {
@@ -41,14 +45,16 @@
   top: 32px;
   left: 32px;
   font-size: 28px;
+  font-weight: 600;
 }
 
 .ProjectName {
   @extend .Content;
   position: absolute;
   bottom: 32px;
-  left: 32px;
+  right: 32px;
   font-size: 28px;
+  font-weight: 600;
 }
 
 .ProjectDescription {
@@ -68,13 +74,15 @@
 
 .LinkIcon {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  height: 32px;
-  width: 32px;
+  top: 0;
+  right: 0;
+  height: 34px;
+  width: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  background: #ffffff58;
+  @include themed {
+    background: t("bgPrimary");
+  }
 }

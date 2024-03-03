@@ -31,6 +31,10 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   animation: appear 2.3s ease;
+
+  :global(.rendered) & {
+    animation: none;
+  }
 }
 
 @keyframes appear {
@@ -46,6 +50,9 @@
 }
 
 .Notch {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 88px;
   height: 18px;
   border-radius: 14px;
