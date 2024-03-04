@@ -1,12 +1,12 @@
 "use client";
 
 import { createContext, useContext, useMemo, useState } from "react";
-import { projects as projectsList } from "@/app/lib/portfolio-data.json";
+import { work, education } from "@/app/lib/portfolio-data.json";
 import { useParams, useRouter } from "next/navigation";
 
 const ExperienceContext = createContext({});
 export const CONTENTS = {
-  companies: "work",
+  work: "work",
   education: "education",
 };
 
@@ -41,8 +41,12 @@ export function ExperienceContextProvider({ children }) {
 
   const onSelectContent = () => {
     const selectedContent =
-      content === CONTENTS.companies ? CONTENTS.education : CONTENTS.companies;
+      content === CONTENTS.work ? CONTENTS.education : CONTENTS.work;
     router.push(`/experience/${selectedContent}`);
+  };
+
+  const getContent = () => {
+    return content === CONTENTS.work ? work : education;
   };
 
   return (
@@ -50,6 +54,8 @@ export function ExperienceContextProvider({ children }) {
       value={{
         selectedContent: content,
         onSelectContent,
+        content: getContent(),
+        contentDetail: getContent().list[0],
       }}
     >
       {children}

@@ -84,5 +84,139 @@
       "skills": ["Python"]
     }
   ],
-  "companies": {}
+  "work": {
+    "highlight": "More than 5 years of experience",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+    "list": [
+      {
+        "title": "Senior Frontend Developer",
+        "place": "BBVA Technology",
+        "from": "2023",
+        "to": "now",
+        "messages": [
+          "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+          "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+          "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+        ],
+        "skills": ["Ember", "CSS", "LitElement", "JavaScript", "Cucumber"]
+      },
+      {
+        "title": "Head of Frontend Development",
+        "place": "Urban Data analytics",
+        "from": "2022",
+        "to": "2023",
+        "messages": [
+          "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+          "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+          "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+        ],
+        "skills": [
+          "React",
+          "Scss",
+          "TypeScript",
+          "Node",
+          "JavaScript",
+          "Cucumber"
+        ]
+      },
+      {
+        "title": "Senior Frontend Developer",
+        "place": "Sngular",
+        "from": "2021",
+        "to": "2022",
+        "messages": [
+          "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+          "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+          "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+        ],
+        "skills": [
+          "React",
+          "Scss",
+          "TypeScript",
+          "Node",
+          "JavaScript",
+          "Cucumber"
+        ]
+      },
+      {
+        "title": "Frontend Developer",
+        "place": "Nucoro - EXO",
+        "from": "2019",
+        "to": "2021",
+        "messages": [
+          "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+          "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+          "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+        ],
+        "skills": [
+          "React",
+          "Scss",
+          "TypeScript",
+          "Node",
+          "JavaScript",
+          "Cucumber"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "highlight": "More than 5 years of experience",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+    "list": [
+      {
+        "title": "Tech management and Leadership",
+        "place": "GeeksHubs Academy",
+        "from": "2023",
+        "messages": [
+          "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+          "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+          "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+        ],
+        "skills": [
+          "React",
+          "Scss",
+          "TypeScript",
+          "Node",
+          "JavaScript",
+          "Cucumber"
+        ]
+      },
+      {
+        "title": "Full Stack Development",
+        "place": "Ironhack",
+        "from": "2018",
+        "messages": [
+          "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+          "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+          "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+        ],
+        "skills": [
+          "React",
+          "Scss",
+          "TypeScript",
+          "Node",
+          "JavaScript",
+          "Cucumber"
+        ]
+      },
+      {
+        "title": "Web development and design",
+        "place": "Aula Creactiva",
+        "from": "2017",
+        "messages": [
+          "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+          "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+          "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+        ],
+        "skills": [
+          "React",
+          "Scss",
+          "TypeScript",
+          "Node",
+          "JavaScript",
+          "Cucumber"
+        ]
+      }
+    ]
+  }
 }

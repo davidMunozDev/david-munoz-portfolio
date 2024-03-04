@@ -1,7 +1,17 @@
+"use client";
+
+import { useExperienceContext } from "../experience-context";
+
 const ExperiencesList = () => {
+  const { content } = useExperienceContext();
   return (
     <div>
-      <h1>ExperiencesList</h1>
+      {content.list.map((experience) => (
+        <div key={experience.id}>
+          <h3>{experience.title}</h3>
+          <p>{experience.place}</p>
+        </div>
+      ))}
     </div>
   );
 };

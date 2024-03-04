@@ -1,0 +1,37 @@
+@import "../../../styles/theme";
+
+.Wrapper {
+  height: 100%;
+  width: 100%;
+  border-radius: $radiusL;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+
+  @include themed {
+    background: t("bgPrimary");
+  }
+}
+
+.Title {
+  font-size: 28px;
+  background: linear-gradient(90deg, #deedff, #43b2de);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Level {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.Label {
+  font-size: 12px;
+  color: white;
+}

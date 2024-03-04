@@ -9,7 +9,7 @@ const ContentSwitch = ({}) => {
   const { selectedContent, onSelectContent } = useExperienceContext();
   return (
     <Toggle
-      firstOpt={{ value: CONTENTS.companies, content: <span>Work</span> }}
+      firstOpt={{ value: CONTENTS.work, content: <span>Work</span> }}
       lastOpt={{ value: CONTENTS.education, content: <span>Education</span> }}
       onChange={onSelectContent}
       value={selectedContent}

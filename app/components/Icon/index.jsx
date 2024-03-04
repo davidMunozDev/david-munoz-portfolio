@@ -4,7 +4,7 @@ import { SiLinkedin } from "react-icons/si";
 import { FaSquareGithub, FaRegCalendarCheck, FaFilter } from "react-icons/fa6";
 import { IoBatteryFull, IoMenu, IoClose } from "react-icons/io5";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { IoMdCloseCircle } from "react-icons/io";
+import { IoMdCloseCircle, IoIosArrowForward } from "react-icons/io";
 
 const IconComponent = ({ name, width, height, ...rest }) => {
   const props = { style: { width, height }, ...rest };
@@ -22,6 +22,7 @@ const IconComponent = ({ name, width, height, ...rest }) => {
     close: <IoMdCloseCircle {...props} />,
     cross: <IoClose {...props} />,
     menu: <IoMenu {...props} />,
+    listItem: <IoIosArrowForward {...props} />,
   };
 
   return icons[name];
