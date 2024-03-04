@@ -31,7 +31,6 @@ const ProjectsList = ({ part }) => {
               alt="union"
               width={22}
               height={40}
-              priority={false}
             />
             <div className={styles.MoreInfo}>More info</div>
             <span className={styles.ProjectName}>{name}</span>

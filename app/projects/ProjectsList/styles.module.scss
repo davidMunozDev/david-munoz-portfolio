@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: all 0.3s;
 
   &__selected {
     @include themed {
@@ -23,6 +24,7 @@
     }
     .Union {
       visibility: visible;
+      width: 22px;
     }
     .ProjectNumber {
       border-bottom-right-radius: 0;
@@ -98,4 +100,6 @@
 .Union {
   position: absolute;
   visibility: hidden;
+  width: 0;
+  transition: all 0.3s;
 }

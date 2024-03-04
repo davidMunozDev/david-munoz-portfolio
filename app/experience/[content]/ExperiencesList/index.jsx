@@ -6,8 +6,8 @@ const ExperiencesList = () => {
   const { content } = useExperienceContext();
   return (
     <div>
-      {content.list.map((experience) => (
-        <div key={experience.id}>
+      {content.list.map((experience, i) => (
+        <div key={i}>
           <h3>{experience.title}</h3>
           <p>{experience.place}</p>
         </div>
