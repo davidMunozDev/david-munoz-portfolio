@@ -34,9 +34,11 @@
   &__content {
     @extend .Project;
     position: relative;
-    background-size: cover;
-    background-position: center;
     cursor: pointer;
+
+    img {
+      border-radius: $radiusL;
+    }
 
     &:hover {
       .MoreInfo {
