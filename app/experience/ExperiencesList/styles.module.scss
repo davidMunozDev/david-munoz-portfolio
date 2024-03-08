@@ -1,0 +1,64 @@
+@import "../../styles/theme";
+
+.Wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.LoadMore {
+  width: 100%;
+  height: 30px;
+  color: rgb(195, 195, 195);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $radiusL;
+  flex-shrink: 0;
+  cursor: pointer;
+  @include themed {
+    background: t("bgSecondary");
+  }
+}
+
+.Experience {
+  @include themed {
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border-radius: $radiusL;
+    cursor: pointer;
+    background: t("bgPrimary");
+
+    &__selected {
+      @extend .Experience;
+      background-image: linear-gradient(to right, #2babe4 0%, #9529ed 100%);
+      color: white;
+    }
+  }
+
+  .Date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .Information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+
+    h3 {
+      text-overflow: ellipsis;
+    }
+  }
+}

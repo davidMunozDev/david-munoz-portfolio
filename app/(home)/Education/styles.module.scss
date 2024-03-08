@@ -8,8 +8,7 @@
   border-radius: $radiusL;
   background: url("/img/education-bg.svg") no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
+  padding: 8px;
 
   @include themed {
     background-color: t("bgPrimary");
@@ -22,9 +21,12 @@
   left: -1px;
 }
 
-.Link {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  fill: white;
+.Skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 65%;
+  gap: 4px;
+  margin-left: auto;
+  margin-top: 20px;
 }

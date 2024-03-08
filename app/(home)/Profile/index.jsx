@@ -11,17 +11,22 @@ export default function Profile() {
         <Image
           alt="profile image"
           src="/img/me-avatar.jpeg"
-          width="82"
-          height="82"
+          width="86"
+          height="86"
           className={styles.Avatar}
         />
         <div className={styles.Information}>
-          <h2 className={styles.Name}>David Muñoz</h2>
-          <p className={styles.Description}>
-            Always looking for new opportunities and focus on improve.
-          </p>
+          <span>Hello👋🏻,</span>
+          <h2 className={styles.Name}>
+            <span>I&apos;m</span> David Muñoz
+          </h2>
         </div>
       </div>
+      <p className={styles.Description}>
+        Always looking for new opportunities and focus on improve. Always
+        looking for new opportunities and focus on improve. Always looking for
+        new opportunities and focus on improve.
+      </p>
       <div className={styles.Social}>
         <a
           href="https://www.linkedin.com/in/davidmu%C3%B1ozviejo/"

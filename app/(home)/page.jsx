@@ -8,6 +8,7 @@ import ThemeSelection from "./ThemeSelection";
 import Position from "./Position";
 import Map from "./Map";
 import Education from "./Education";
+import Languages from "@/app/components/Languages";
 
 export default function Home() {
   return (
@@ -24,8 +25,9 @@ export default function Home() {
       </div>
       <div className={styles.RightColumn}>
         <AstronautIntro />
-        <ThemeSelection />
+        <Languages />
         <Education />
+        <ThemeSelection />
       </div>
     </div>
   );

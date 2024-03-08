@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useMemo, useState } from "react";
 import { work, education } from "@/app/lib/portfolio-data.json";
-import { useParams, useRouter } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 
 const ExperienceContext = createContext({});
 export const CONTENTS = {
@@ -12,7 +12,8 @@ export const CONTENTS = {
 
 export function ExperienceContextProvider({ children }) {
   const router = useRouter();
-  const { content } = useParams();
+  const searchParams = useSearchParams();
+  const content = searchParams.get("content") || CONTENTS.work;
   // const [selectedProject, setSelectedProject] = useState(projectsList[0]);
   // const [filters, setFilters] = useState([]);
 
@@ -42,7 +43,7 @@ export function ExperienceContextProvider({ children }) {
   const onSelectContent = () => {
     const selectedContent =
       content === CONTENTS.work ? CONTENTS.education : CONTENTS.work;
-    router.push(`/experience/${selectedContent}`);
+    router.push(`/experience?content=${selectedContent}`);
   };
 
   const getContent = () => {

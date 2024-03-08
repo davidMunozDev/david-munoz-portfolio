@@ -5,7 +5,7 @@ import Description from "./Description";
 import Detail from "./Detail";
 import ContentSwitch from "./ContentSwitch";
 import ExperiencesList from "./ExperiencesList";
-import Languages from "./Languages";
+import Languages from "@/app/components/Languages";
 import { ExperienceContextProvider } from "./experience-context";
 
 export default function Experience() {

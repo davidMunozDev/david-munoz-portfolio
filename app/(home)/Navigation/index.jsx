@@ -6,10 +6,10 @@ export default function Navigation() {
   return (
     <div className={styles.Wrapper}>
       <div className={styles.Folders}>
-        <Folder href="/about" style="primary">
-          About me
+        <Folder href="/experience?content=education" style="primary">
+          Education
         </Folder>
-        <Folder href="/experience/work" style="secondary">
+        <Folder href="/experience?content=work" style="secondary">
           Work
         </Folder>
       </div>

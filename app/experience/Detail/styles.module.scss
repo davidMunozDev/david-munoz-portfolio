@@ -1,11 +1,15 @@
-@import "../../../styles/theme";
+@import "../../styles/theme";
 
 .Wrapper {
   position: relative;
   width: 100%;
   height: 100%;
   padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: $radiusL;
+  cursor: pointer;
   @include themed {
     border: 4px solid t("bgPrimary");
   }
@@ -25,7 +29,7 @@
 .Messages {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 22px;
 }
 
 .LinkIcon {

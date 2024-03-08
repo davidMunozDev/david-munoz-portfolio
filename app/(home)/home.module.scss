@@ -34,7 +34,7 @@
 }
 
 .RightColumn {
-  @include columnRow(4, minmax(330px, 3fr) 90px minmax(200px, 1fr));
+  @include columnRow(4, minmax(330px, 3fr) 90px minmax(200px, 1fr) 90px);
   animation: right-to-left 9s cubic-bezier(0.27, 0.68, 0.55, 1.06);
 
   :global(.rendered) & {

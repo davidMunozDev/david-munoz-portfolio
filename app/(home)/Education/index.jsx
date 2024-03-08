@@ -1,19 +1,24 @@
 import Image from "next/image";
-import Link from "next/link";
-import Icon from "@/app/components/Icon";
 import styles from "./styles.module.scss";
+import { skills } from "@/app/lib/portfolio-data";
+import Tag from "@/app/components/Tag";
 
 export default function Education() {
+  const skillsList = skills.slice(0, 8);
   return (
-    <Link href="/experience/education" className={styles.Wrapper}>
+    <div className={styles.Wrapper}>
       <Image
         src="/img/astro-education.svg"
         alt="astronaut in home"
-        width="160"
-        height="195"
+        width="140"
+        height="173"
         className={styles.AstroEducation}
       />
-      <Icon className={styles.Link} name="link" width="28" height="28" />
-    </Link>
+      <div className={styles.Skills}>
+        {skillsList.map((skill, index) => (
+          <Tag key={index}>{skill}</Tag>
+        ))}
+      </div>
+    </div>
   );
 }

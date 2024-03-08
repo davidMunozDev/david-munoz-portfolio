@@ -3,7 +3,7 @@ import Toggle from "@/app/components/Toggle";
 import {
   useExperienceContext,
   CONTENTS,
-} from "@/app/experience/[content]/experience-context";
+} from "@/app/experience/experience-context";
 
 const ContentSwitch = ({}) => {
   const { selectedContent, onSelectContent } = useExperienceContext();

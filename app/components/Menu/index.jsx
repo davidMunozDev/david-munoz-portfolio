@@ -26,10 +26,10 @@ export default function Menu({ currentPage }) {
       <Link onClick={manageMenu} href="/about">
         ABOUT
       </Link>
-      <Link onClick={manageMenu} href="/experience/work">
+      <Link onClick={manageMenu} href="/experience?content=work">
         WORK
       </Link>
-      <Link onClick={manageMenu} href="/experience/education">
+      <Link onClick={manageMenu} href="/experience?content=education">
         EDUCATION
       </Link>
     </div>
