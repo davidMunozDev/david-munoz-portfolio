@@ -3,6 +3,7 @@ import "./styles/globals.scss";
 import { ThemeContextProvider } from "@/app/lib/theme-context";
 import { MenuContextProvider } from "@/app/lib/menu-context";
 import Menu from "@/app/components/Menu";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
           <MenuContextProvider>
             {children}
             <Menu />
+            <SpeedInsights />
           </MenuContextProvider>
         </ThemeContextProvider>
       </body>
