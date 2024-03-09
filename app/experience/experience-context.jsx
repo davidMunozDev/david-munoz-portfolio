@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { work, education } from "@/app/lib/portfolio-data.json";
 import { useSearchParams, useRouter } from "next/navigation";
 import { EXPERIENCE_CONTENTS } from "@/app/lib/router.constants";
@@ -17,6 +17,10 @@ export function ExperienceContextProvider({ children }) {
   const [contentDetail, setSelectedContentDetail] = useState(
     getContent(content).list[0]
   );
+
+  useEffect(() => {
+    setSelectedContentDetail(getContent(content).list[0]);
+  }, [content, searchParams]);
 
   const onSelectContent = () => {
     const selectedContent =
