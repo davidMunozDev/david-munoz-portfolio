@@ -5,7 +5,7 @@ export default function Notifications() {
   return (
     <div className={styles.Wrapper}>
       <p className={styles.Content}>
-        <Icon height="14" width="14" name="calendar" />
+        <Icon size="14" name="calendar" />
         David has notifications turned on
       </p>
     </div>

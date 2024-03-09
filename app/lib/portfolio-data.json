@@ -17,70 +17,110 @@
       "url": "https://www.google.com/",
       "name": "Weather App",
       "id": "01",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat..Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia.",
+      "messages": [
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+        "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+      ],
       "skills": ["Next.js", "CSS", "TypeScript"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Proptech App",
       "id": "02",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat..Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia.",
+      "messages": [
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+        "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+      ],
       "skills": ["React", "Scss", "JavaScript", "Node"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
       "id": "03",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat..Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia.",
+      "messages": [
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+        "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+      ],
       "skills": ["React", "Scss", "TypeScript"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
       "id": "04",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat..Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia.",
+      "messages": [
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+        "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+      ],
       "skills": ["React", "Scss", "TypeScript", "HTML"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
       "id": "05",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat..Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia.",
+      "messages": [
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+        "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+      ],
       "skills": ["React", "Scss", "JavaScript"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
       "id": "06",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat..Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia.",
+      "messages": [
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+        "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+      ],
       "skills": ["Angular", "Tailwind", "TypeScript", "HTML"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
       "id": "07",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat..Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia.",
+      "messages": [
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+        "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+      ],
       "skills": ["Next.js", "Tailwind", "JavaScript", "HTML"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
       "id": "08",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat..Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia.",
+      "messages": [
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+        "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+      ],
       "skills": ["Python"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
       "id": "09",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat..Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia.",
+      "messages": [
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+        "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+      ],
       "skills": ["Angular", "Tailwind", "TypeScript", "Node"]
     },
     {
       "url": "https://www.google.com/",
       "name": "Project Name",
       "id": "10",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia dui sollicitudin mollis, non potenti tempus donec blandit fusce volutpat..Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Eu congue condimentum porta auctor viverra urna taciti curabitur, scelerisque penatibus orci feugiat arcu lacinia.",
+      "messages": [
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
+        "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
+      ],
       "skills": ["Python"]
     }
   ],
@@ -89,6 +129,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
     "list": [
       {
+        "id": "01",
         "title": "Senior Frontend Developer",
         "place": "BBVA Technology",
         "from": "2023",
@@ -101,6 +142,7 @@
         "skills": ["Ember", "CSS", "LitElement", "JavaScript", "Cucumber"]
       },
       {
+        "id": "02",
         "title": "Full Stack Developer",
         "place": "Freelance",
         "from": "2020",
@@ -113,6 +155,7 @@
         "skills": ["React", "NextJs", "LitElement", "JavaScript", "TypeScript"]
       },
       {
+        "id": "03",
         "title": "Head of Frontend Development",
         "place": "Urban Data analytics",
         "from": "2022",
@@ -132,6 +175,7 @@
         ]
       },
       {
+        "id": "04",
         "title": "Senior Frontend Developer",
         "place": "Sngular",
         "from": "2021",
@@ -151,6 +195,7 @@
         ]
       },
       {
+        "id": "05",
         "title": "Frontend Developer",
         "place": "Nucoro - EXO",
         "from": "2019",
@@ -176,6 +221,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora. Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
     "list": [
       {
+        "id": "01",
         "title": "Trainning",
         "place": "trainning academy",
         "to": "now",
@@ -195,6 +241,7 @@
         ]
       },
       {
+        "id": "02",
         "title": "Tech management and Leadership",
         "place": "GeeksHubs Academy",
         "to": "2024",
@@ -214,6 +261,7 @@
         ]
       },
       {
+        "id": "03",
         "title": "Full Stack Development",
         "place": "Ironhack",
         "to": "2018",
@@ -233,6 +281,7 @@
         ]
       },
       {
+        "id": "04",
         "title": "Web development and design",
         "place": "Aula Creactiva",
         "to": "2017",

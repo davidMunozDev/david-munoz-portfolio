@@ -3,7 +3,7 @@
 .Wrapper {
   width: 100%;
   height: 100%;
-  padding: 32px;
+  padding: 22px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,53 +14,33 @@
     border: 4px solid t("bgPrimary");
   }
   color: rgba(255, 255, 255, 0.882);
-  cursor: pointer;
 }
 
-.DetailImage {
-  z-index: 0;
-  opacity: 0.4;
-  height: 100%;
+.Background {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  clip-path: polygon(100% 33%, 0 100%, 100% 100%);
-}
+  height: 100%;
+  border-radius: $radiusL;
+  background-image: linear-gradient(
+    180deg,
+    rgba(26, 8, 32, 0) 0%,
+    rgba(170, 20, 223, 1) 100%
+  );
+  opacity: 0.4;
 
-.Content {
-  position: relative;
-  z-index: 1;
-}
+  .Dots {
+    position: absolute;
+    top: 16px;
+    right: 0;
+  }
 
-.Skills {
-  @extend .Content;
-  gap: 16px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.ProjectNumber {
-  @extend .Content;
-  position: absolute;
-  top: 32px;
-  left: 32px;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.ProjectName {
-  @extend .Content;
-  position: absolute;
-  bottom: 32px;
-  right: 32px;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.ProjectDescription {
-  @extend .Content;
-  margin-bottom: 50px;
-  font-size: 16px;
+  .Donuts {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .AstroImage {
@@ -72,17 +52,77 @@
   z-index: 10;
 }
 
-.LinkIcon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 34px;
-  width: 34px;
+.Content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
-  @include themed {
-    background: t("bgPrimary");
+  gap: 32px;
+
+  .Skills {
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ProjectNumber {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .ProjectName {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .ProjectDescription {
+    margin-bottom: 50px;
+    font-size: 16px;
+  }
+
+  .Messages {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .Actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    flex-wrap: nowrap;
+    bottom: 0;
+    width: 100%;
+
+    a {
+      width: auto;
+    }
+
+    .Icon {
+      animation: moveRightToLeft 1s linear infinite;
+    }
+
+    @keyframes moveRightToLeft {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(30%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
   }
 }

@@ -2,7 +2,6 @@
 
 .Wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100%;
   min-height: 300px;
@@ -14,10 +13,6 @@
   animation: backgroundGradient 6s ease infinite;
   border-radius: $radiusL;
   overflow-y: auto;
-
-  &__scroll {
-    align-items: start;
-  }
 }
 
 .MessagesWrapper {

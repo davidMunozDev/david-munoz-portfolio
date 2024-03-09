@@ -1,0 +1,10 @@
+.Paragraph {
+  display: flex;
+  gap: 8px;
+  color: #c8c8c8;
+
+  .Decorator {
+    flex-shrink: 0;
+    color: #9726ed;
+  }
+}

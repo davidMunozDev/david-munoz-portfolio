@@ -1,9 +1,15 @@
 "use client";
 
-import { applyStyles } from "@/app/lib/styleHelpers";
+import { applyStyles } from "@/app/lib/styleHelpers.util";
 import styles from "./styles.module.scss";
 import { useProjectsContext } from "@/app/projects/projects-context";
 import Image from "next/image";
+
+const getUnionStyle = (part, i) => {
+  const positionStyle = part === 0 ? { right: "-26px" } : { left: "-26px" };
+  const indexStyle = i !== 1 ? { [i === 0 ? "bottom" : "top"]: "15%" } : {};
+  return { ...positionStyle, ...indexStyle };
+};
 
 const ProjectsList = ({ part }) => {
   const { projects, onSelectProject, selectedProject } = useProjectsContext();
@@ -33,16 +39,13 @@ const ProjectsList = ({ part }) => {
             />
             <Image
               className={styles.Union}
-              style={{
-                [part === 0 ? "right" : "left"]: "-26px",
-                ...(i !== 1 ? { [i === 0 ? "bottom" : "top"]: "15%" } : {}),
-              }}
+              style={getUnionStyle(part, i)}
               src={`/img/union.svg`}
               alt="union"
               width={22}
               height={40}
             />
-            <div className={styles.MoreInfo}>More info</div>
+            <div className={styles.MoreInfo}>View</div>
             <span className={styles.ProjectName}>{name}</span>
             <span className={styles.ProjectNumber}>{id}</span>
           </div>

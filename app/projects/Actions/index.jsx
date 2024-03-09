@@ -11,8 +11,10 @@ const Actions = () => {
   return (
     <div className={styles.Wrapper}>
       <Pagination
-        goBack={canGoBack && goBack}
-        goForward={canGoForward && goForward}
+        goBack={goBack}
+        canGoBack={canGoBack}
+        canGoForward={canGoForward}
+        goForward={goForward}
       />
       <Filter />
     </div>

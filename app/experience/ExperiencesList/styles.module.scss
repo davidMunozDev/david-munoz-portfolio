@@ -33,7 +33,8 @@
     gap: 16px;
     border-radius: $radiusL;
     cursor: pointer;
-    background: t("bgPrimary");
+    background: #242944;
+    color: rgba(255, 255, 255, 0.5);
 
     &__selected {
       @extend .Experience;
@@ -54,11 +55,5 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
-    white-space: nowrap;
-
-    h3 {
-      text-overflow: ellipsis;
-    }
   }
 }

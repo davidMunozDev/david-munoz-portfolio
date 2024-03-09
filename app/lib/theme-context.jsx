@@ -1,8 +1,11 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState, useRef } from "react";
-import { get as getFromStorage, save as saveInStorage } from "./localStorage";
-import { applyStyles } from "./styleHelpers";
+import {
+  get as getFromStorage,
+  save as saveInStorage,
+} from "./localStorage.util";
+import { applyStyles } from "./styleHelpers.util";
 import { usePathname } from "next/navigation";
 
 const ThemeContext = createContext({});

@@ -66,6 +66,8 @@
   padding: 16px;
   cursor: pointer;
   border-bottom: 1px solid #5c69ac;
+  display: flex;
+  justify-content: space-between;
 
   &:hover {
     background-color: #5c69ac;

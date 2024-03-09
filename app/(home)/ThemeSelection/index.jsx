@@ -20,8 +20,7 @@ export default function ThemeSelection() {
         <Icon
           className={!isChecked && styles.IconSelected}
           name="sun"
-          width="34"
-          height="34"
+          size="34"
         />
       </div>
       <div className={styles.Icon__dark}>

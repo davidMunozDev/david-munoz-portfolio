@@ -9,31 +9,31 @@ import {
 } from "react-icons/fa6";
 import { IoBatteryFull, IoMenu, IoClose } from "react-icons/io5";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { IoMdCloseCircle, IoIosArrowForward } from "react-icons/io";
+import { IoMdCloseCircle, IoMdArrowDropright } from "react-icons/io";
+import { FaCheckCircle } from "react-icons/fa";
 
-const IconComponent = ({ name, width, height, ...rest }) => {
-  const props = { style: { width, height }, ...rest };
-  const icons = {
-    gitHub: <FaSquareGithub {...props} />,
-    linkedIn: <SiLinkedin {...props} />,
-    calendar: <FaRegCalendarCheck {...props} />,
-    link: <MdOutlineArrowOutward {...props} />,
-    moon: <BsFillMoonFill {...props} />,
-    sun: <BsFillSunFill {...props} />,
-    battery: <IoBatteryFull {...props} />,
-    arrowLeft: <FaArrowLeft {...props} />,
-    arrowRight: <FaArrowRight {...props} />,
-    arrowTop: <FaArrowUpLong {...props} />,
-    filter: <FaFilter {...props} />,
-    close: <IoMdCloseCircle {...props} />,
-    cross: <IoClose {...props} />,
-    menu: <IoMenu {...props} />,
-    listItem: <IoIosArrowForward {...props} />,
-  };
-
-  return icons[name];
+const icons = {
+  gitHub: FaSquareGithub,
+  linkedIn: SiLinkedin,
+  calendar: FaRegCalendarCheck,
+  link: MdOutlineArrowOutward,
+  moon: BsFillMoonFill,
+  sun: BsFillSunFill,
+  battery: IoBatteryFull,
+  arrowLeft: FaArrowLeft,
+  arrowRight: FaArrowRight,
+  arrowTop: FaArrowUpLong,
+  filter: FaFilter,
+  close: IoMdCloseCircle,
+  cross: IoClose,
+  menu: IoMenu,
+  listDecorator: IoMdArrowDropright,
+  check: FaCheckCircle,
 };
 
-export default function Icon({ name, width = "28", height = "28", ...props }) {
-  return <IconComponent name={name} width={width} height={height} {...props} />;
+export default function Icon({ name, size, ...rest }) {
+  const Icon = icons[name];
+  const props = { style: { width: size, height: size }, ...rest };
+
+  return <Icon {...props} />;
 }

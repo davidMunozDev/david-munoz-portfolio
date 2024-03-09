@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 import {
   get as getFromStorage,
   save as saveInStorage,
-} from "@/app/lib/localStorage";
+} from "@/app/lib/localStorage.util";
 import Messages from "./Messages";
 import Form from "./Form";
 import Icon from "@/app/components/Icon";

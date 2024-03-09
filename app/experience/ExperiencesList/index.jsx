@@ -2,19 +2,23 @@
 import styles from "./styles.module.scss";
 import { useExperienceContext } from "../experience-context";
 import Icon from "@/app/components/Icon";
-import { applyStyles } from "@/app/lib/styleHelpers";
 
 const ExperiencesList = () => {
-  const { content } = useExperienceContext();
+  const { content, onSelectContentDetail, contentDetail } =
+    useExperienceContext();
   const experiencesList = content.list.slice(0, 4);
-  const isSelected = (index) => index === 0;
+  const isSelected = (id) => id === contentDetail.id;
+
   return (
     <div className={styles.Wrapper}>
       {experiencesList.map((experience, i) => (
         <div
           className={
-            !isSelected(i) ? styles.Experience : styles.Experience__selected
+            !isSelected(experience.id)
+              ? styles.Experience
+              : styles.Experience__selected
           }
+          onClick={() => onSelectContentDetail(experience)}
           key={i}
         >
           <div className={styles.Information}>
@@ -23,7 +27,7 @@ const ExperiencesList = () => {
           </div>
           <div className={styles.Date}>
             <span>{experience.to}</span>
-            <Icon name="arrowTop" height="24" width="24" />
+            <Icon name="arrowTop" size="24" />
             <span>{experience.from}</span>
           </div>
         </div>

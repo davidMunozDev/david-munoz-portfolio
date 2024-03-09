@@ -3,18 +3,23 @@
 import Icon from "@/app/components/Icon";
 import styles from "./styles.module.scss";
 import Button from "@/app/components/Button";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { skills } from "@/app/lib/portfolio-data.json";
 import { useProjectsContext } from "@/app/projects/projects-context";
+import { useClickOutside } from "@/app/lib/useClickOutside.hook";
 
 const Filter = ({}) => {
   const { filters, selectFilter } = useProjectsContext();
-  const [isModalOpen, setIsmodalOpen] = useState(false);
-  const handleModalopen = () => setIsmodalOpen((isOpen) => !isOpen);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const ref = useRef(null);
+
+  const handleModalopen = () => setIsModalOpen((isOpen) => !isOpen);
+  const handleModalClose = () => isModalOpen && setIsModalOpen(false);
   const isFilterActive = (filter) => filters.includes(filter);
 
+  useClickOutside(ref, handleModalClose);
   return (
-    <div className={styles.Wrapper}>
+    <div ref={ref} className={styles.Wrapper}>
       <ul
         className={
           isModalOpen ? styles.FiltersModal : styles.FiltersModal__inactive
@@ -31,6 +36,9 @@ const Filter = ({}) => {
             key={i}
           >
             {skill}
+            <div>
+              {isFilterActive(skill) && <Icon name="check" size="16" />}
+            </div>
           </li>
         ))}
       </ul>
@@ -38,11 +46,11 @@ const Filter = ({}) => {
         {!isModalOpen ? (
           <span>
             {filters.length ? <i className={styles.Dot} /> : null}
-            Filter by tech <Icon width="18" name="filter" />
+            Filter by tech <Icon size="18" name="filter" />
           </span>
         ) : (
           <span>
-            Close <Icon width="18" name="close" />
+            Close <Icon size="18" name="close" />
           </span>
         )}
       </Button>

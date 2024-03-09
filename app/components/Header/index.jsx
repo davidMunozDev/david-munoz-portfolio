@@ -15,11 +15,10 @@ export default function Header({ currentPage }) {
       <div className={styles.Actions}>
         <Icon
           onClick={changeTheme}
-          width="22"
-          height="22"
+          size="22"
           name={theme === "dark" ? "moon" : "sun"}
         />
-        <Icon onClick={manageMenu} width="32" height="32" name="menu" />
+        <Icon onClick={manageMenu} size="32" name="menu" />
       </div>
     </div>
   );

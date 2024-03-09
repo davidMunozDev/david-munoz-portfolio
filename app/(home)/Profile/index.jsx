@@ -33,14 +33,14 @@ export default function Profile() {
           style={{ height: "24px" }}
           target="_blank"
         >
-          <Icon width="24" height="24" name="linkedIn" />
+          <Icon size="24" name="linkedIn" />
         </a>
         <a
           href="https://github.com/davidMunozDev"
           style={{ height: "28px" }}
           target="_blank"
         >
-          <Icon width="28" height="28" name="gitHub" />
+          <Icon size="28" name="gitHub" />
         </a>
         <Button>Download CV</Button>
       </div>

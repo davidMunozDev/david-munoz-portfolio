@@ -1,23 +1,27 @@
 @import "../../styles/theme";
 
 .Button {
-  color: #ffffff;
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px;
   border: none;
   border-radius: $radiusL;
   background-size: 200% auto;
-  transition: 0.5s;
   background-image: linear-gradient(
     to right,
     #ab57ec 0%,
     #9726ed 50%,
     #2aabe4 100%
   );
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+
   &:hover {
     background-position: right center;
   }
@@ -28,5 +32,14 @@
     background-image: linear-gradient(to right, #717171 0%, #e4e4e4 100%);
     pointer-events: none;
   }
-  cursor: pointer;
+}
+
+.Text {
+  position: relative;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }

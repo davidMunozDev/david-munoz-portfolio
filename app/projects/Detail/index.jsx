@@ -1,18 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./styles.module.scss";
 import { useProjectsContext } from "@/app/projects/projects-context";
 import Tag from "@/app/components/Tag";
+import ListParagraph from "@/app/components/ListParagraph";
+import Button from "@/app/components/Button";
 import Icon from "@/app/components/Icon";
 
 const Detail = () => {
   const { selectedProject } = useProjectsContext();
-  const { name, description, id, url } = selectedProject;
+  const { name, messages, id, url } = selectedProject;
 
   return (
-    <a href={url} target="_blank" className={styles.Wrapper}>
+    <div className={styles.Wrapper}>
       <Image
         src={`/img/astro-projects.svg`}
         alt="astronaut projects"
@@ -20,32 +21,59 @@ const Detail = () => {
         height="140"
         className={styles.AstroImage}
       />
-      <div className={styles.DetailImage}>
-        <div className={styles.shadow}></div>
-        <Image
-          src={`/projects/project-${id}.png`}
-          alt="project image detail"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-        />
-      </div>
-      <div className={styles.LinkIcon}>
-        <Icon name="link" width="30" height="30" />
-      </div>
-      <h2 className={styles.ProjectNumber}>{id}</h2>
+      <Background />
+      <div className={styles.Content}>
+        <h2 className={styles.ProjectNumber}>{id}</h2>
+        <h2 className={styles.ProjectName}>{name}</h2>
+        <div className={styles.Messages}>
+          {messages.map((message, i) => (
+            <ListParagraph key={i} className={styles.ProjectDescription}>
+              {message}
+            </ListParagraph>
+          ))}
+        </div>
+        <div className={styles.Skills}>
+          {selectedProject.skills.map((skill) => (
+            <Tag key={skill}>{skill}</Tag>
+          ))}
+        </div>
 
-      <p className={styles.ProjectDescription}>{description}</p>
-
-      <div className={styles.Skills}>
-        {selectedProject.skills.map((skill) => (
-          <Tag key={skill}>{skill}</Tag>
-        ))}
+        <div className={styles.Actions}>
+          <Button className={styles.Button} target="_blank" href={url}>
+            View code
+          </Button>
+          <Button
+            className={styles.Button}
+            target="_blank"
+            href={url}
+            variant="text"
+          >
+            See the project
+            <Icon className={styles.Icon} name="arrowRight" />
+          </Button>
+        </div>
       </div>
-
-      <h2 className={styles.ProjectName}>{name}</h2>
-    </a>
+    </div>
   );
 };
+
+const Background = () => (
+  <div className={styles.Background}>
+    <Image
+      className={styles.Dots}
+      src={`/img/circles-decoration.svg`}
+      alt="astronaut projects"
+      height="280"
+      width="160"
+    />
+    <Image
+      className={styles.Donuts}
+      src={`/img/donuts.svg`}
+      alt="astronaut projects"
+      height="200"
+      width="200"
+    />
+  </div>
+);
 
 export default Detail;

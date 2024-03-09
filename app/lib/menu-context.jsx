@@ -1,7 +1,10 @@
 "use client";
 
 import { createContext, useContext, useState } from "react";
-import { get as getFromStorage, save as saveInStorage } from "./localStorage";
+import {
+  get as getFromStorage,
+  save as saveInStorage,
+} from "./localStorage.util";
 
 const MenuContext = createContext({});
 
