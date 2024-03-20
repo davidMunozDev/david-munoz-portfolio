@@ -1,25 +1,20 @@
-@import "../../../styles/theme";
+@import "theme";
+@import "components";
 
 $main-gap: 18px;
 
 .Wrapper {
+  @extend .BentoBox;
   display: flex;
   align-items: flex-end;
   position: relative;
   padding: 10px;
-  height: 100%;
-  width: 100%;
   border-radius: $radiusL;
   overflow: hidden;
   cursor: pointer;
-  @include themed {
-    background: t("bgPrimary");
-  }
 
   h2 {
-    color: white; //TODO use var
-    font-weight: 700;
-    font-size: 16px;
+    color: #000000;
     z-index: 4;
   }
 
@@ -48,16 +43,16 @@ $main-gap: 18px;
 }
 
 .PaperDark {
-  @include paper(#242944, calc(100% - 16px), 45%, 1);
+  @include paper(rgb(33, 38, 45), calc(100% - 16px), 45%, 1);
 }
 
 .PaperMedium {
-  @include paper(#404a7e, calc(100% - 32px), calc(45% - 16px), 2);
+  @include paper(rgb(68, 76, 88), calc(100% - 32px), calc(45% - 16px), 2);
   transition: all 0.5s;
 }
 
 .PaperLight {
-  @include paper(#5c69ac, calc(100% - 48px), calc(45% - 32px), 3);
+  @include paper(rgb(170, 179, 190), calc(100% - 48px), calc(45% - 32px), 3);
   transition: all 0.2s;
 }
 

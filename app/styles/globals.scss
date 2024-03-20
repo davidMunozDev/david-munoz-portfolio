@@ -13,6 +13,8 @@ body {
   height: 100vh;
   font-family: Robo;
   font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -24,7 +26,12 @@ p {
   margin: 0;
 }
 
+h1 {
+  font-size: 36px;
+}
+
 h2 {
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -36,8 +43,23 @@ h2 {
 :global(.rendered) {
   animation: none;
 }
-.rendered {
-  animation: none;
+
+.theme--dark {
+  color: map-get(map-get($themes, "dark"), "colorPrimary");
+  background: map-get(map-get($themes, "dark"), "bgMain");
+
+  p {
+    color: map-get(map-get($themes, "dark"), "colorSecondary");
+  }
+}
+
+.theme--light {
+  color: map-get(map-get($themes, "light"), "colorPrimary");
+  background: map-get(map-get($themes, "light"), "bgMain");
+
+  p {
+    color: map-get(map-get($themes, "light"), "colorSecondary");
+  }
 }
 
 :global(.theme--dark) {
@@ -48,17 +70,9 @@ h2 {
 
 :global(.theme--light) {
   color: map-get(map-get($themes, "light"), "colorPrimary");
-  overflow-y: auto;
   background: map-get(map-get($themes, "light"), "bgMain");
 }
-.theme--dark {
-  color: map-get(map-get($themes, "dark"), "colorPrimary");
-  overflow-y: auto;
-  background: map-get(map-get($themes, "dark"), "bgMain");
-}
-
-.theme--light {
-  color: map-get(map-get($themes, "light"), "colorPrimary");
-  overflow-y: auto;
-  background: map-get(map-get($themes, "light"), "bgMain");
+.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl-attrib {
+  display: none !important;
 }

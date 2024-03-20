@@ -1,14 +1,15 @@
 import styles from "./home.module.scss";
-import AstronautIntro from "./AstronautIntro";
 import Profile from "./Profile";
 import Notifications from "./Notifications";
 import Navigation from "./Navigation";
 import Chat from "./Chat";
-import ThemeSelection from "./ThemeSelection";
-import Position from "./Position";
+import Name from "./Name";
 import Map from "./Map";
-import Education from "./Education";
+import MainSkills from "./MainSkills";
+import Reading from "./Reading";
+import ExtraInfo from "./ExtraInfo";
 import Languages from "@/app/components/Languages";
+import Contact from "./Contact";
 
 export default function Home() {
   return (
@@ -19,15 +20,16 @@ export default function Home() {
         <Map />
       </div>
       <div className={styles.CenterColumn}>
-        <Position />
+        <Name />
         <Notifications />
         <Chat />
+        <Contact />
       </div>
       <div className={styles.RightColumn}>
-        <AstronautIntro />
+        <ExtraInfo />
+        <Reading />
         <Languages />
-        <Education />
-        <ThemeSelection />
+        <MainSkills />
       </div>
     </div>
   );

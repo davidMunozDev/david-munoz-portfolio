@@ -1,0 +1,76 @@
+@import "theme";
+
+.Wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: $radiusL;
+  cursor: pointer;
+  @include themed {
+    border: 4px solid t("bgPrimary");
+  }
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  .Skills {
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Title {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .Messages {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+
+.LinkIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  @include themed {
+    background: t("bgPrimary");
+  }
+}
+
+.Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(26, 8, 32, 0) 0%,
+    rgba(170, 20, 223, 1) 100%
+  );
+  opacity: 0.4;
+}

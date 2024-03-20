@@ -1,34 +1,30 @@
-@import "../../../styles/theme";
+@import "theme";
 
 .Wrapper {
   display: flex;
   justify-content: center;
+  position: relative;
   height: 100%;
-  min-height: 300px;
   width: 100%;
-  padding: 16px;
-  padding-top: 70px;
-  background: linear-gradient(0deg, #031556, #266ba1, #44b4e0);
-  background-size: 150% 150%;
-  animation: backgroundGradient 6s ease infinite;
-  border-radius: $radiusL;
-  overflow-y: auto;
+  padding: 80px 22px 0 22px;
 }
 
 .MessagesWrapper {
-  width: 300px;
+  min-width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
   transition: height 0.5s;
+  position: relative;
 }
 
 .Message {
   width: fit-content;
   border-radius: 24px;
-  font-size: 16px;
-  padding: 10px 16px;
+  padding: 8px 14px;
   animation: up 0.3s linear;
+  color: #ffffff;
 
   :global(.rendered) & {
     animation: none;
@@ -36,45 +32,30 @@
 
   &__default {
     @extend .Message;
-    background: rgba(255, 255, 255, 0.28);
-    color: #080d20;
+    background: rgba(80, 78, 78, 0.615);
+    backdrop-filter: blur(2px);
   }
   &__user {
     @extend .Message;
     background: #2c92ff;
-    color: #ffffff;
   }
   &__last {
     @extend .Message;
     border-radius: 24px 24px 24px 0px;
   }
+
+  @keyframes up {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
 
 .MessageContainer {
   width: 100%;
-}
-
-@keyframes backgroundGradient {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 0 100%;
-  }
-
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes up {
-  from {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }

@@ -1,21 +1,23 @@
 $themes: (
   "dark": (
     colorPrimary: #ffffff,
-    colorSecondary: #080d20,
-    bgMain: #080d20,
-    bgPrimary: #313960,
-    bgSecondary: #425183,
+    colorSecondary: rgba(255, 255, 255, 0.7),
+    bgMain: #000000,
+    bgPrimary: #000000,
+    bgSecondary: #13171f,
+    borderPrimary: #30363c,
   ),
   "light": (
-    colorPrimary: #080d20,
+    colorPrimary: #13171f,
     colorSecondary: #ffffff,
-    bgMain: linear-gradient(180deg, #f0e6f4 0%, #b3d8e1 100%),
-    bgPrimary: #42b2e1,
-    bgSecondary: #425183,
+    bgMain: #f7f2f2,
+    bgPrimary: #ffffff,
+    bgSecondary: #ece9e9,
+    borderPrimary: #eff2f7,
   ),
 );
 
-$radiusL: 10px;
+$radiusL: 14px;
 $buttonBgPrimary: linear-gradient(
   to right,
   #ab57ec 0%,

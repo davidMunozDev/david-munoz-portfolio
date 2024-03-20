@@ -1,0 +1,23 @@
+@import "theme";
+@import "components";
+
+.Wrapper {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  gap: 22px;
+
+  .Box {
+    @extend .BentoBox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1;
+
+    .Title {
+      font-size: 46px;
+      font-weight: 700;
+    }
+  }
+}

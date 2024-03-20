@@ -1,0 +1,55 @@
+@import "theme";
+@import "components";
+
+.Wrapper {
+  @extend .BentoBox;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+  font-weight: 600;
+  animation: left-to-right 9s cubic-bezier(0.27, 0.68, 0.55, 1.06);
+
+  :global(.rendered) & {
+    animation: none;
+  }
+
+  @include themed {
+    background: t("bgPrimary");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 0 $radiusL $radiusL 0;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    z-index: 0;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.LastName {
+  color: black;
+  z-index: 2;
+}
+
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

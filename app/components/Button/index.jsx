@@ -6,9 +6,12 @@ export default function Button({
   className,
   component,
   variant = "button",
+  theme = "primary",
   href,
   disabled,
   onClick,
+  icon,
+  rounded,
   ...props
 }) {
   const buttonClass = variant === "button" ? "Button" : "Text";
@@ -18,7 +21,10 @@ export default function Button({
     <HTMLTag
       className={applyStyles([
         styles[buttonClass],
+        styles[theme],
         disabled && disabledClass,
+        icon && styles.icon,
+        rounded && styles.rounded,
         className,
       ])}
       href={href}

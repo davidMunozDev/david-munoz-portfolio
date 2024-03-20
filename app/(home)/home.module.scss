@@ -1,4 +1,4 @@
-@import "../styles/theme";
+@import "theme";
 
 .Container {
   padding: 22px;
@@ -21,7 +21,7 @@
 }
 
 .LeftColumn {
-  @include columnRow(4, auto 260px minmax(190px, 1fr));
+  @include columnRow(4, auto 260px minmax(120px, 1fr));
   animation: left-to-right 9s cubic-bezier(0.27, 0.68, 0.55, 1.06);
 
   :global(.rendered) & {
@@ -30,11 +30,11 @@
 }
 
 .CenterColumn {
-  @include columnRow(5, 95px 24px minmax(500px, 1fr));
+  @include columnRow(5, 95px 30px 1fr 150px);
 }
 
 .RightColumn {
-  @include columnRow(4, minmax(330px, 3fr) 90px minmax(200px, 1fr) 90px);
+  @include columnRow(4, 1fr 1.5fr 95px minmax(200px, 1fr));
   animation: right-to-left 9s cubic-bezier(0.27, 0.68, 0.55, 1.06);
 
   :global(.rendered) & {

@@ -1,0 +1,11 @@
+@import "theme";
+
+.Container {
+  padding: 0 40px;
+  width: 100vw;
+  max-width: 1100px;
+  margin: 0 auto;
+  @include themed {
+    background: t("bgMain");
+  }
+}

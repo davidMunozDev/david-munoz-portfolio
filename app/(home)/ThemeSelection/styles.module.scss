@@ -1,8 +1,8 @@
-@import "../../styles/theme";
+@import "theme";
+@import "components";
 
 .Wrapper {
-  width: 100%;
-  height: 100%;
+  @extend .BentoBox;
   position: relative;
   padding: 4px;
   border-radius: $radiusL;
@@ -12,19 +12,21 @@
 }
 
 .SelectedTheme {
-  height: 100%;
-  width: 50%;
-  background: #4e5a81;
-  border-radius: 8px;
+  @include themed {
+    height: 100%;
+    width: 50%;
+    border-radius: 12px;
+    background: t("bgSecondary");
 
-  &__light {
-    @extend .SelectedTheme;
-    margin-right: auto;
-  }
+    &__light {
+      @extend .SelectedTheme;
+      margin-right: auto;
+    }
 
-  &__dark {
-    @extend .SelectedTheme;
-    margin-left: auto;
+    &__dark {
+      @extend .SelectedTheme;
+      margin-left: auto;
+    }
   }
 }
 
