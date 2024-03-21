@@ -1,6 +1,6 @@
 "use client";
 import Toggle from "@/app/components/Toggle";
-import { useExperienceContext } from "@/app/(extendedInfo)/experience/experience-context";
+import { useExperienceContext } from "@/app/(pages)/experience/experience-context";
 import { EXPERIENCE_CONTENTS } from "@/app/lib/router.constants";
 
 const ContentSwitch = ({}) => {

@@ -15,8 +15,8 @@ export default function MySkills() {
         </Button>
       </div>
       <div className={styles.Skills}>
-        {skillsList.map((skill) => (
-          <div key={skill.id} className={styles.Skill}>
+        {skillsList.map((skill, i) => (
+          <div key={i} className={styles.Skill}>
             <Icon name={skill.toLowerCase()} size="30" />
           </div>
         ))}

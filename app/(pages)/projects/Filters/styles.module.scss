@@ -1,0 +1,26 @@
+@import "theme";
+
+.Wrapper {
+  @include themed {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px;
+    background: rgba(0, 0, 0, 0.547);
+    backdrop-filter: blur(4px);
+    z-index: 10;
+
+    &__intersecting {
+      border: 1px solid t("borderPrimary");
+    }
+    .Filters {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 22px;
+      button {
+        height: 30px;
+      }
+    }
+  }
+}

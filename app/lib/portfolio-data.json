@@ -76,7 +76,7 @@
     },
     {
       "url": "https://www.google.com/",
-      "name": "Project Name",
+      "name": "Web components library",
       "id": "06",
       "shortDescription": "Dapibus ultrices pretium penatibus litora. hexagonal architecture and caching strategies",
       "messages": [
@@ -84,7 +84,7 @@
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
         "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
       ],
-      "skills": ["Angular", "Tailwind", "TypeScript", "HTML"]
+      "skills": ["Lit", "Tailwind", "TypeScript", "HTML"]
     },
     {
       "url": "https://www.google.com/",

@@ -6,12 +6,13 @@ import { dmSerifDisplay } from "@/app/fonts";
 export default function Profile() {
   return (
     <div className={styles.Wrapper}>
-      <p className={styles.Description}>
+      <div>
         <h2 className={dmSerifDisplay.className}>Software Developer</h2>
-        <br></br>and product designer from Ireland. I&apos;m interested in
-        React, Node, Product Design, Jamstack, Startups, Cryptocurrencies and
-        Music.
-      </p>
+        <p className={styles.Description}>
+          and product designer from Ireland. I&apos;m interested in React, Node,
+          Product Design, Jamstack, Startups, Cryptocurrencies and Music.
+        </p>
+      </div>
       <div className={styles.Social}>
         <Button
           icon
