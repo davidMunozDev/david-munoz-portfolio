@@ -17,7 +17,6 @@ const EducationList = () => {
 
   return (
     <div className={styles.Wrapper}>
-      <div className={styles.GradientBox} />
       <div className={styles.StudiesList}>
         {experiencesList.map((experience, i) => (
           <article
