@@ -61,17 +61,6 @@
   }
 }
 
-.GradientBox {
-  background-image: linear-gradient(to top, #2babe4 0%, #9529ed 100%);
-  width: 20%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: $radiusL;
-}
-
 .Union {
   display: flex;
   align-items: center;
