@@ -29,6 +29,7 @@
   "projects": [
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Weather App",
       "id": "01",
       "shortDescription": "Weather app created with the objective of implementing hexagonal architecture and caching strategies.",
@@ -41,6 +42,7 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Proptech App",
       "id": "02",
       "shortDescription": "Lorem ipsum dolor sit amet consectetur adipiscing.",
@@ -53,6 +55,7 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "MVC pattern practice",
       "id": "03",
       "shortDescription": "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius.",
@@ -65,6 +68,7 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Ecommerce",
       "id": "04",
       "shortDescription": "Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
@@ -77,6 +81,7 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Flash cards",
       "id": "05",
       "shortDescription": "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
@@ -89,6 +94,7 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Web components library",
       "id": "06",
       "shortDescription": "Dapibus ultrices pretium penatibus litora. hexagonal architecture and caching strategies",
@@ -101,6 +107,7 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Project Name",
       "id": "07",
       "shortDescription": "Amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices.",
@@ -113,6 +120,7 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Project Name",
       "id": "08",
       "shortDescription": "Created with the objective of implementing hexagonal architecture and caching strategies",
@@ -125,6 +133,7 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Project Name",
       "id": "09",
       "shortDescription": "Consectetur adipiscing, elit non ad varius lobortis massa hexagonal architecture and caching strategies",
@@ -137,6 +146,7 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Project Name",
       "id": "10",
       "shortDescription": "Lorem ipsum dolor sit amet consectetur adipiscing.",

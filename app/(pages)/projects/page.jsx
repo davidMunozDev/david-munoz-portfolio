@@ -8,7 +8,10 @@ const Projects = () => {
   return (
     <div className={styles.Container}>
       <Info page="Projects">
-        Here you can find a list of projects I have worked on. Click on any of
+        <p>
+          This is a longer sample text containing twenty-eight example words for
+          you to see how it looks in the layout.
+        </p>
       </Info>
       <Suspense fallback={<div>Loading...</div>}>
         <Filters />

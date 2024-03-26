@@ -22,12 +22,20 @@
       color: t("colorPrimary");
       border: 2px solid t("borderPrimary");
       background-color: t("bgPrimary");
+
+      &:hover {
+        background: t("bgSecondary");
+      }
     }
 
     &.secondary {
       color: black;
       background-color: white;
       border: black;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
     &.icon {
@@ -40,10 +48,6 @@
     &.rounded {
       border-radius: 20px;
       height: 40px;
-    }
-
-    &:hover {
-      border-width: 4px;
     }
 
     &__disabled {

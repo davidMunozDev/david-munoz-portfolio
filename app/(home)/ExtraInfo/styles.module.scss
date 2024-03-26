@@ -27,7 +27,8 @@
   }
 
   .Project {
-    @extend .BentoBox;
+    border-radius: $radiusL;
+    background: #4d167a;
     position: relative;
     display: flex;
     align-items: center;
