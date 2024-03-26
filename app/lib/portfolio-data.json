@@ -1,24 +1,40 @@
 {
-  "skills": [
+  "mainSkills": [
     "React",
-    "Scss",
+    "Node",
     "TypeScript",
     "JavaScript",
-    "Python",
+    "NextJs",
     "CSS",
-    "Node",
     "HTML",
-    "Angular",
-    "Tailwind",
-    "Next.js"
+    "Cypress"
   ],
+  "skills": {
+    "front": [
+      "React",
+      "Lit",
+      "TypeScript",
+      "JavaScript",
+      "NextJs",
+      "SCSS",
+      "HTML",
+      "Cypress",
+      "Vitest",
+      "Cucumber",
+      "Tailwind"
+    ],
+    "back": ["Node", "Express", "MongoDB"],
+    "learning": ["Astro", "Python", "Django", "PostgreSQL"]
+  },
   "projects": [
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Weather App",
       "id": "01",
+      "shortDescription": "Weather app created with the objective of implementing hexagonal architecture and caching strategies.",
       "messages": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
         "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
       ],
@@ -26,10 +42,12 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Proptech App",
       "id": "02",
+      "shortDescription": "Lorem ipsum dolor sit amet consectetur adipiscing.",
       "messages": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
         "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
       ],
@@ -37,8 +55,10 @@
     },
     {
       "url": "https://www.google.com/",
-      "name": "Project Name",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
+      "name": "MVC pattern practice",
       "id": "03",
+      "shortDescription": "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius.",
       "messages": [
         "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
@@ -48,8 +68,10 @@
     },
     {
       "url": "https://www.google.com/",
-      "name": "Project Name",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
+      "name": "Ecommerce",
       "id": "04",
+      "shortDescription": "Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
       "messages": [
         "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
@@ -59,10 +81,12 @@
     },
     {
       "url": "https://www.google.com/",
-      "name": "Project Name",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
+      "name": "Flash cards",
       "id": "05",
+      "shortDescription": "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
       "messages": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
         "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
       ],
@@ -70,19 +94,23 @@
     },
     {
       "url": "https://www.google.com/",
-      "name": "Project Name",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
+      "name": "Web components library",
       "id": "06",
+      "shortDescription": "Dapibus ultrices pretium penatibus litora. hexagonal architecture and caching strategies",
       "messages": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
         "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
       ],
-      "skills": ["Angular", "Tailwind", "TypeScript", "HTML"]
+      "skills": ["Lit", "Tailwind", "TypeScript", "HTML"]
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Project Name",
       "id": "07",
+      "shortDescription": "Amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices.",
       "messages": [
         "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
@@ -92,10 +120,12 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Project Name",
       "id": "08",
+      "shortDescription": "Created with the objective of implementing hexagonal architecture and caching strategies",
       "messages": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa.",
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
         "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
       ],
@@ -103,10 +133,12 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Project Name",
       "id": "09",
+      "shortDescription": "Consectetur adipiscing, elit non ad varius lobortis massa hexagonal architecture and caching strategies",
       "messages": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing.",
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
         "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
       ],
@@ -114,10 +146,12 @@
     },
     {
       "url": "https://www.google.com/",
+      "git": "https://github.com/davidMunozDev/weather-pwa-app",
       "name": "Project Name",
       "id": "10",
+      "shortDescription": "Lorem ipsum dolor sit amet consectetur adipiscing.",
       "messages": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+        "Lorem ipsum adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
         "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
         "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
       ],
@@ -135,7 +169,7 @@
         "from": "2023",
         "to": "now",
         "messages": [
-          "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.",
+          "Lorem ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, pretium penatibus litora.",
           "Ipsum dolor sit amet consectetur adipiscing, elit non ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus",
           "Ad varius lobortis massa, dapibus ultrices pretium penatibus litora.  Non ad varius lobortis massa, dapibus ultrices pretium penatibus litora."
         ],
@@ -222,8 +256,9 @@
     "list": [
       {
         "id": "01",
-        "title": "Trainning",
-        "place": "trainning academy",
+        "title": "Training",
+        "place": "Training academy",
+        "img": "/education/google.webp",
         "to": "now",
         "from": "2023",
         "messages": [
@@ -244,6 +279,7 @@
         "id": "02",
         "title": "Tech management and Leadership",
         "place": "GeeksHubs Academy",
+        "img": "/education/geekshubs.webp",
         "to": "2024",
         "from": "2023",
         "messages": [
@@ -264,6 +300,7 @@
         "id": "03",
         "title": "Full Stack Development",
         "place": "Ironhack",
+        "img": "/education/ironhack.webp",
         "to": "2018",
         "from": "2017",
         "messages": [
@@ -284,6 +321,7 @@
         "id": "04",
         "title": "Web development and design",
         "place": "Aula Creactiva",
+        "img": "/education/aulacreactiva.webp",
         "to": "2017",
         "from": "2016",
         "messages": [

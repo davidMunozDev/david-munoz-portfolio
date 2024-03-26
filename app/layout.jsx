@@ -1,14 +1,7 @@
-import { Inter } from "next/font/google";
+import { dmSans } from "@/app/fonts";
 import "./styles/globals.scss";
 import { ThemeContextProvider } from "@/app/lib/theme-context";
-import { MenuContextProvider } from "@/app/lib/menu-context";
-import Menu from "@/app/components/Menu";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weights: ["400", "700", "600"],
-});
 
 export const metadata = {
   title: "David Muñoz's Portfolio",
@@ -18,13 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body style={{ scrollBehavior: "smooth" }} className={dmSans.className}>
         <ThemeContextProvider>
-          <MenuContextProvider>
-            {children}
-            <Menu />
-            <SpeedInsights />
-          </MenuContextProvider>
+          {children}
+          <SpeedInsights />
         </ThemeContextProvider>
       </body>
     </html>

@@ -1,0 +1,22 @@
+@import "theme";
+
+.Wrapper {
+  @include themed {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding-bottom: 3em;
+
+    border-bottom: 1px solid t("borderPrimary");
+    p {
+      font-size: 22px;
+    }
+  }
+  .Decoration {
+    display: inline-block;
+    background-image: linear-gradient(to right, #2babe4 0%, #9529ed 100%);
+    width: 1em;
+    height: 0.1em;
+    border-radius: 0.25em;
+  }
+}

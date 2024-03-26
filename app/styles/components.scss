@@ -1,0 +1,11 @@
+@import "theme";
+
+.BentoBox {
+  @include themed {
+    width: 100%;
+    height: 100%;
+    background: t("bgPrimary");
+    border: 1px solid t("borderPrimary");
+    border-radius: $radiusL;
+  }
+}

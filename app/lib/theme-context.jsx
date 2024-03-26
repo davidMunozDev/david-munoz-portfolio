@@ -9,16 +9,13 @@ import { applyStyles } from "./styleHelpers.util";
 import { usePathname } from "next/navigation";
 
 const ThemeContext = createContext({});
+const getTheme = () => getFromStorage("theme");
 
 export function ThemeContextProvider({ children }) {
   const path = usePathname();
-  const [theme, setTheme] = useState("dark");
-  const [status, setStatus] = useState("firstRender");
+  const [theme, setTheme] = useState(getTheme() || "dark");
+  const [status, setStatus] = useState("rendered");
   const isRendered = useRef(false);
-
-  useEffect(() => {
-    getTheme();
-  }, []);
 
   useEffect(() => {
     if (path && isRendered.current) {
@@ -27,15 +24,9 @@ export function ThemeContextProvider({ children }) {
     isRendered.current = true;
   }, [path]);
 
-  const getTheme = () => {
-    const selectedTheme = getFromStorage("theme");
-
-    selectedTheme && setTheme(selectedTheme);
-  };
-
   const changeTheme = () => {
     saveInStorage("theme", theme === "dark" ? "light" : "dark");
-    getTheme();
+    setTheme(getTheme());
   };
 
   return (

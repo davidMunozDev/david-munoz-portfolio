@@ -1,0 +1,15 @@
+.Container {
+  padding: 4rem 40px;
+  width: 100vw;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Particles {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+}

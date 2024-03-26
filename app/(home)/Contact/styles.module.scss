@@ -1,0 +1,46 @@
+@import "theme";
+@import "components";
+
+.Wrapper {
+  @extend .BentoBox;
+  position: relative;
+  cursor: pointer;
+
+  .Info {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    gap: 8px;
+
+    button {
+      position: absolute;
+      width: auto;
+      bottom: 18px;
+      right: 18px;
+      overflow: hidden;
+      width: 40px;
+      border-radius: 20px;
+      padding: 0;
+      transition: all 0.3s;
+      gap: 0;
+
+      span {
+        width: 0;
+        opacity: 0;
+        white-space: nowrap;
+      }
+    }
+
+    &:hover {
+      button {
+        width: 100px;
+        gap: 4px;
+        span {
+          width: auto;
+          opacity: 1;
+          padding-right: 4px;
+        }
+      }
+    }
+  }
+}

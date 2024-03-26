@@ -1,0 +1,81 @@
+@import "theme";
+@import "components";
+
+.Wrapper {
+  @extend .BentoBox;
+  position: relative;
+  overflow: hidden;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+
+  @include themed {
+    background-color: t("bgPrimary");
+  }
+
+  p {
+    z-index: 1;
+    span {
+      @include themed {
+        background: t("bgSecondary");
+      }
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  }
+
+  &:hover {
+    .Header {
+      button {
+        width: 100px;
+        span {
+          width: auto;
+          opacity: 1;
+          padding-right: 4px;
+        }
+      }
+    }
+    .BookImage {
+      transform: rotate(-10deg);
+    }
+  }
+}
+
+.Header {
+  @include themed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+    h2 {
+      flex-shrink: 0;
+    }
+
+    button {
+      overflow: hidden;
+      width: 40px;
+      min-height: 40px;
+      border-radius: 20px;
+      padding: 0;
+      transition: all 0.3s;
+      gap: 0;
+      span {
+        width: 0;
+        opacity: 0;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.BookImage {
+  position: absolute;
+  bottom: -20%;
+  right: -20px;
+  transform: rotate(-15deg);
+  border-radius: $radiusL;
+  transition: all 0.3s;
+}

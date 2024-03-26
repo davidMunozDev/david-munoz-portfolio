@@ -1,0 +1,100 @@
+@import "theme";
+@import "components";
+
+.Wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.Union {
+  width: 100%;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+
+  &__start {
+    @extend .Union;
+    justify-content: flex-start;
+  }
+  &__end {
+    @extend .Union;
+    justify-content: flex-end;
+  }
+
+  img {
+    transform: rotate(90deg);
+  }
+}
+
+.Experience {
+  @include themed {
+    @extend .BentoBox;
+    position: relative;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    cursor: pointer;
+
+    .Date {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .Information {
+      display: flex;
+      flex-direction: column;
+      p {
+        margin-top: auto;
+      }
+
+      .Messages {
+        transition: grid-template-rows 0.3s;
+        display: grid;
+        grid-template-rows: 0fr;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+          overflow: hidden;
+        }
+      }
+    }
+
+    &__selected {
+      @extend .Experience;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+
+      button {
+        display: flex;
+      }
+
+      .Information {
+        .Messages {
+          @extend .Messages;
+          grid-template-rows: 1fr;
+          div {
+            margin-top: 30px;
+          }
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 8px;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #2babe4 0%, #9529ed 100%);
+      }
+    }
+  }
+}

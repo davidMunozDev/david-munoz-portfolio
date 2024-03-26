@@ -1,0 +1,11 @@
+@import "theme";
+
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  @include themed {
+    background: t("bgMain");
+  }
+}

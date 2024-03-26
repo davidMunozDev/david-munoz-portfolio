@@ -1,61 +1,63 @@
-@import "../../../styles/theme";
+@import "theme";
 $main-gap: 18px;
 
 .Wrapper {
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  width: 100%;
-  height: calc(100% - 12px);
-  padding: 8px;
-  z-index: 2;
-  border-radius: $radiusL 0px $radiusL $radiusL;
-  margin-top: 12px;
-  cursor: pointer;
-  &:before {
-    content: "";
-    position: absolute;
-    top: -12px;
-    right: 0;
-    width: 40%;
-    height: 13px;
-    border-radius: $radiusL $radiusL 0px 0px;
-    z-index: 2;
-  }
-  &:hover {
-    .Paper {
-      height: 12px;
+  @include themed {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 12px);
+    padding: 14px;
+    z-index: 3;
+    border-radius: $radiusL 0px $radiusL $radiusL;
+    margin-top: 12px;
+    border: 1px solid t("borderPrimary");
+    cursor: pointer;
+    &:before {
+      content: "";
+      position: absolute;
       top: -12px;
+      right: -1px;
+      width: 40%;
+      height: 11px;
+      border-radius: $radiusL $radiusL 0px 0px;
+      z-index: 2;
+      border: 1px solid t("borderPrimary");
+      border-bottom: 0;
     }
-  }
-
-  h2 {
-    font-weight: 700;
-    font-size: 16px;
+    &:hover {
+      .Paper {
+        height: 12px;
+        top: -12px;
+      }
+    }
   }
 }
 
 .primary {
-  background: #44b4e0;
-  color: white; //TODO use var
+  @include themed {
+    background: t("bgPrimary");
 
-  &:before {
-    background: #44b4e0;
+    &:before {
+      background: t("bgPrimary");
+    }
   }
 }
 
 .secondary {
-  background: #5c69ac;
-  color: white; //TODO use var
+  @include themed {
+    background: t("bgSecondary");
 
-  &:before {
-    background: #5c69ac;
+    &:before {
+      background: t("bgSecondary");
+    }
   }
 }
 
 .LinkIcon {
   position: absolute;
-  top: 0;
+  top: -2px;
   right: 10px;
   z-index: 2;
 }
@@ -66,8 +68,7 @@ $main-gap: 18px;
   background-color: white;
   left: 8px;
   position: absolute;
-  top: 0;
-  z-index: 1;
+  top: -2px;
   border-radius: 4px 4px 0px 0px;
   transition: all 0.2s ease-in-out;
 }

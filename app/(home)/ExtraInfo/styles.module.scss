@@ -1,0 +1,85 @@
+@import "theme";
+@import "components";
+
+.Wrapper {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  gap: 22px;
+
+  .Experience {
+    @extend .BentoBox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1;
+
+    .Title {
+      font-size: 46px;
+      font-weight: 700;
+    }
+    span {
+      @include themed {
+        color: t("colorSecondary");
+      }
+    }
+  }
+
+  .Project {
+    border-radius: $radiusL;
+    background: #4d167a;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    h2 {
+      position: absolute;
+      margin: auto;
+      text-align: center;
+    }
+
+    &:hover {
+      button {
+        width: 85px;
+        span {
+          width: auto;
+          opacity: 1;
+          padding-right: 4px;
+        }
+      }
+      img {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+    }
+
+    button {
+      width: 40px;
+      min-height: 40px;
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      overflow: hidden;
+      border-radius: 20px;
+      padding: 0;
+      transition: all 0.3s;
+      gap: 0;
+      span {
+        width: 0;
+        opacity: 0;
+        white-space: nowrap;
+      }
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.4;
+      transition: all 0.3s;
+    }
+  }
+}

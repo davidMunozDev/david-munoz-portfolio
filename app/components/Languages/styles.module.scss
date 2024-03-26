@@ -1,9 +1,8 @@
-@import "../../styles/theme";
+@import "theme";
+@import "components";
 
 .Wrapper {
-  height: 100%;
-  width: 100%;
-  border-radius: $radiusL;
+  @extend .BentoBox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,10 +16,7 @@
 
 .Title {
   font-size: 28px;
-  background: linear-gradient(90deg, #deedff, #43b2de);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 .Level {
@@ -29,9 +25,14 @@
   width: 100%;
   margin-top: 4px;
   font-weight: 400;
+  @include themed {
+    color: t("colorSecondary");
+  }
 }
 
 .Label {
   font-size: 12px;
-  color: white;
+  @include themed {
+    color: t("colorSecondary");
+  }
 }
