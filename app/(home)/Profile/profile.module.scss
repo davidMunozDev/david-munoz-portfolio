@@ -8,9 +8,22 @@
   border-radius: $radiusL;
   padding: 22px;
 
+  h2 {
+    margin-bottom: 8px;
+  }
+
   a {
     flex-shrink: 0;
   }
+}
+
+.Decoration {
+  display: inline-block;
+  background-image: linear-gradient(to right, #2babe4 0%, #9529ed 100%);
+  width: 1em;
+  height: 0.15em;
+  border-radius: 0.25em;
+  margin-right: 4px;
 }
 
 .ProfileInformation {
@@ -18,16 +31,6 @@
   align-items: center;
   justify-content: center;
   gap: 22px;
-}
-
-.Description {
-  font-weight: 400;
-
-  h2 {
-    font-size: 26px;
-    color: white;
-    display: inline-block;
-  }
 }
 
 .Social {

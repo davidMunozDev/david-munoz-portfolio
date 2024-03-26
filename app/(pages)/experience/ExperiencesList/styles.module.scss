@@ -1,59 +1,100 @@
 @import "theme";
+@import "components";
 
 .Wrapper {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
 }
 
-.LoadMore {
+.Union {
   width: 100%;
-  height: 30px;
-  color: rgb(195, 195, 195);
+  height: 22px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: $radiusL;
-  flex-shrink: 0;
-  cursor: pointer;
-  @include themed {
-    background: t("bgSecondary");
+  padding: 0 10%;
+
+  &__start {
+    @extend .Union;
+    justify-content: flex-start;
+  }
+  &__end {
+    @extend .Union;
+    justify-content: flex-end;
+  }
+
+  img {
+    transform: rotate(90deg);
   }
 }
 
 .Experience {
   @include themed {
-    padding: 16px;
-    width: 100%;
-    height: 100%;
+    @extend .BentoBox;
+    position: relative;
+    padding: 22px;
     display: flex;
     justify-content: space-between;
-    gap: 16px;
-    border-radius: $radiusL;
+    gap: 80px;
     cursor: pointer;
-    background: #242944;
-    color: rgba(255, 255, 255, 0.5);
+
+    .Date {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .Information {
+      display: flex;
+      flex-direction: column;
+      p {
+        margin-top: auto;
+      }
+
+      .Messages {
+        transition: grid-template-rows 0.3s;
+        display: grid;
+        grid-template-rows: 0fr;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+          overflow: hidden;
+        }
+      }
+    }
 
     &__selected {
       @extend .Experience;
-      background-image: linear-gradient(to right, #2babe4 0%, #9529ed 100%);
+      align-items: center;
+      overflow: hidden;
       color: white;
+
+      button {
+        display: flex;
+      }
+
+      .Information {
+        .Messages {
+          @extend .Messages;
+          grid-template-rows: 1fr;
+          div {
+            margin-top: 30px;
+          }
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 8px;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #2babe4 0%, #9529ed 100%);
+      }
     }
-  }
-
-  .Date {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .Information {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 }

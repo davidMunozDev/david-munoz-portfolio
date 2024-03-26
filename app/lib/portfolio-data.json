@@ -1,5 +1,5 @@
 {
-  "skills": [
+  "mainSkills": [
     "React",
     "Node",
     "TypeScript",
@@ -7,12 +7,25 @@
     "NextJs",
     "CSS",
     "HTML",
-    "Cypress",
-    "Python",
-    "Scss",
-    "Angular",
-    "Tailwind"
+    "Cypress"
   ],
+  "skills": {
+    "front": [
+      "React",
+      "Lit",
+      "TypeScript",
+      "JavaScript",
+      "NextJs",
+      "SCSS",
+      "HTML",
+      "Cypress",
+      "Vitest",
+      "Cucumber",
+      "Tailwind"
+    ],
+    "back": ["Node", "Express", "MongoDB"],
+    "learning": ["Astro", "Python", "Django", "PostgreSQL"]
+  },
   "projects": [
     {
       "url": "https://www.google.com/",
@@ -233,8 +246,9 @@
     "list": [
       {
         "id": "01",
-        "title": "Trainning",
-        "place": "trainning academy",
+        "title": "Training",
+        "place": "Training academy",
+        "img": "/education/google.webp",
         "to": "now",
         "from": "2023",
         "messages": [
@@ -255,6 +269,7 @@
         "id": "02",
         "title": "Tech management and Leadership",
         "place": "GeeksHubs Academy",
+        "img": "/education/geekshubs.webp",
         "to": "2024",
         "from": "2023",
         "messages": [
@@ -275,6 +290,7 @@
         "id": "03",
         "title": "Full Stack Development",
         "place": "Ironhack",
+        "img": "/education/ironhack.webp",
         "to": "2018",
         "from": "2017",
         "messages": [
@@ -295,6 +311,7 @@
         "id": "04",
         "title": "Web development and design",
         "place": "Aula Creactiva",
+        "img": "/education/aulacreactiva.webp",
         "to": "2017",
         "from": "2016",
         "messages": [

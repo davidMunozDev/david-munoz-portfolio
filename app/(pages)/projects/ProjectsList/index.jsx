@@ -7,6 +7,7 @@ import Image from "next/image";
 import { dmSerifDisplay } from "@/app/fonts";
 import Tag from "@/app/components/Tag";
 import Icon from "@/app/components/Icon";
+import Link from "next/link";
 
 const ProjectsList = () => {
   const blurredProjectImage =
@@ -15,37 +16,39 @@ const ProjectsList = () => {
     <div className={styles.Wrapper}>
       {projects.map(({ id, name, skills, shortDescription }, i) => (
         <article className={styles.Project} key={id}>
-          <div className={styles.Project__content}>
-            <div className={styles.ImageContainer}>
-              <div className={styles.Mask}>
-                <Image
-                  src={`/projects/project-${id}.png`}
-                  alt={`project ${name}`}
-                  fill
-                  placeholder="blur"
-                  blurDataURL={blurredProjectImage}
-                  className={styles.ProjectImage}
-                />
+          <Link href={`/projects/${id}`}>
+            <div className={styles.Project__content}>
+              <div className={styles.ImageContainer}>
+                <div className={styles.Mask}>
+                  <Image
+                    src={`/projects/project-${id}.png`}
+                    alt={`project ${name}`}
+                    fill
+                    placeholder="blur"
+                    blurDataURL={blurredProjectImage}
+                    className={styles.ProjectImage}
+                  />
+                </div>
+                <div className={styles.Cta}>
+                  <Icon name="link" size={28} />
+                </div>
               </div>
-              <div className={styles.Cta}>
-                <Icon name="link" size={28} />
+              <h3
+                className={applyStyles([
+                  dmSerifDisplay.className,
+                  styles.ProjectName,
+                ])}
+              >
+                {name}
+              </h3>
+              <p>{shortDescription}</p>
+              <div className={styles.Skills}>
+                {skills.map((skill) => (
+                  <Tag key={skill}>{skill}</Tag>
+                ))}
               </div>
             </div>
-            <h3
-              className={applyStyles([
-                dmSerifDisplay.className,
-                styles.ProjectName,
-              ])}
-            >
-              {name}
-            </h3>
-            <p>{shortDescription}</p>
-            <div className={styles.Skills}>
-              {skills.map((skill) => (
-                <Tag key={skill}>{skill}</Tag>
-              ))}
-            </div>
-          </div>
+          </Link>
         </article>
       ))}
     </div>

@@ -8,9 +8,7 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  height: 100vh;
+  width: 100vw;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
@@ -44,6 +42,7 @@ h2 {
 }
 
 .theme--dark {
+  min-height: 100vh;
   color: map-get(map-get($themes, "dark"), "colorPrimary");
   background: map-get(map-get($themes, "dark"), "bgMain");
 
@@ -62,6 +61,7 @@ h2 {
 }
 
 :global(.theme--dark) {
+  min-height: 100vh;
   color: map-get(map-get($themes, "dark"), "colorPrimary");
   overflow-y: auto;
   background: map-get(map-get($themes, "dark"), "bgMain");

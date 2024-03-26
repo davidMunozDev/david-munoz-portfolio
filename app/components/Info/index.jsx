@@ -1,11 +1,13 @@
 import Title from "@/app/components/Title";
 import styles from "./styles.module.scss";
 
-const Info = () => {
+const Info = ({ page, children }) => {
   return (
     <div className={styles.Wrapper}>
-      <Title tag="h1">Projects</Title>
-      <p>This is a sample text containing twelve example words for you.</p>
+      <Title tag="h1">
+        <span className={styles.Decoration} /> {page}
+      </Title>
+      <p>{children}</p>
     </div>
   );
 };

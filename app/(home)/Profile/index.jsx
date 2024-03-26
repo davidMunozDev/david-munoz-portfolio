@@ -1,14 +1,17 @@
 import styles from "./profile.module.scss";
 import Button from "@/app/components/Button";
 import Icon from "@/app/components/Icon";
-import { dmSerifDisplay } from "@/app/fonts";
+import Title from "@/app/components/Title";
 
 export default function Profile() {
   return (
     <div className={styles.Wrapper}>
       <div>
-        <h2 className={dmSerifDisplay.className}>Software Developer</h2>
-        <p className={styles.Description}>
+        <Title>
+          <i className={styles.Decoration} />
+          Software Developer
+        </Title>
+        <p>
           and product designer from Ireland. I&apos;m interested in React, Node,
           Product Design, Jamstack, Startups, Cryptocurrencies and Music.
         </p>

@@ -26,16 +26,16 @@ export default function Chat() {
         height={60}
       />
       <Messages messages={DEFAULT_MESSAGES} isAnimationRunning={false} />
-      <form className={styles.Form}>
+      <div className={styles.Form}>
         <input
           type="text"
           placeholder="Type a message"
           className={styles.Input}
         />
-        <Button icon type="submit" className={styles.Submit}>
+        <Button icon type="submit" onClick={() => {}} className={styles.Submit}>
           <Icon name="send" size="18" />
         </Button>
-      </form>
+      </div>
     </div>
   );
 }

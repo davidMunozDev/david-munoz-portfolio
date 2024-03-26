@@ -1,0 +1,59 @@
+@import "components";
+@import "theme";
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  a {
+    color: #9529ed;
+    text-decoration: underline;
+  }
+}
+.Categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 22px;
+  .Category {
+    @extend .BentoBox;
+    padding: 22px;
+    &:nth-of-type(1) {
+      grid-row: span 2;
+    }
+    .Bar {
+      width: 4em;
+      height: 0.25em;
+      border-radius: 0.25em;
+      margin-bottom: 22px;
+      background-image: linear-gradient(to right, #2babe4 0%, #9529ed 100%);
+    }
+    .Skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 22px;
+      gap: 16px;
+
+      .Skill {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        flex-direction: column;
+        gap: 0.25em;
+        border-radius: 8px;
+        @include themed {
+          background-color: t("bgSecondary");
+        }
+      }
+    }
+  }
+}
